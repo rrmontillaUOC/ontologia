@@ -1,0 +1,3332 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://rafaelromero.org/ontologia/turismo#"
+     xml:base="http://rafaelromero.org/ontologia/turismo"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:tourism="http://aula.uoc.edu/tourism#">
+    <owl:Ontology rdf:about="http://rafaelromero.org/ontologia/turismo">
+        <dc:creator>Rafael Romero Montilla</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-27</dc:date>
+        <dc:description xml:lang="es">Ontología que modela ciudades, eventos turísticos, alojamientos, atracciones culturales, restaurantes y recomendaciones urbanas personalizadas.</dc:description>
+        <dc:rights>Licencia Creative Commons Attribution 4.0 (CC BY 4.0)</dc:rights>
+        <dc:title xml:lang="es">Ontología de Turismo Inteligente</dc:title>
+        <vann:preferredNamespacePrefix>turismo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://rafaelromero.org/ontologia/turismo#</vann:preferredNamespaceUri>
+        <owl:versionInfo>v1.0</owl:versionInfo>
+        <foaf:homepage rdf:resource="https://example.org"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#locatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://aula.uoc.edu/tourism#locatedIn">
+        <rdfs:domain rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <rdfs:range rdf:resource="http://aula.uoc.edu/tourism#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#hasPrice -->
+
+
+    <owl:DatatypeProperty rdf:about="http://aula.uoc.edu/tourism#hasPrice">
+        <rdfs:domain rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#hasRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://aula.uoc.edu/tourism#hasRating">
+        <rdfs:domain rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Attraction -->
+
+
+    <owl:Class rdf:about="http://aula.uoc.edu/tourism#Attraction"/>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#City -->
+
+
+    <owl:Class rdf:about="http://aula.uoc.edu/tourism#City"/>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Event -->
+
+
+    <owl:Class rdf:about="http://aula.uoc.edu/tourism#Event"/>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Hotel -->
+
+
+    <owl:Class rdf:about="http://aula.uoc.edu/tourism#Hotel"/>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Restaurant -->
+
+
+    <owl:Class rdf:about="http://aula.uoc.edu/tourism#Restaurant"/>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Transport -->
+
+
+    <owl:Class rdf:about="http://aula.uoc.edu/tourism#Transport"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#Barcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Bilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#Bilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CarnavalBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CarnavalBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Carnaval Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CarnavalBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CarnavalBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Carnaval Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CarnavalCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CarnavalCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Carnaval Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CarnavalMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CarnavalMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Carnaval Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CarnavalMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CarnavalMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Carnaval Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CarnavalSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CarnavalSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Carnaval San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CarnavalSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CarnavalSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Carnaval Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CarnavalToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CarnavalToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Carnaval Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CarnavalValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CarnavalValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Carnaval Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CarnavalZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CarnavalZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Carnaval Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.9</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CastilloZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CastilloZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Castillo Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CatedralBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CatedralBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Catedral Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CatedralBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CatedralBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Catedral Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CatedralCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CatedralCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Catedral Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CatedralMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CatedralMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Catedral Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CatedralMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CatedralMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Catedral Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CatedralPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CatedralPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Catedral Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CatedralSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CatedralSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Catedral Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CatedralToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CatedralToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Catedral Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CatedralValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CatedralValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Catedral Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CatedralZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CatedralZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Catedral Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CityBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CityBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>City Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CityBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CityBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>City Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CityCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CityCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>City Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CityMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CityMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>City Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CityMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CityMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>City Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CityPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CityPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>City Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CitySevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CitySevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>City Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CityToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CityToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>City Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CityZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CityZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>City Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ConciertoCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ConciertoCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Concierto Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ConciertoMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ConciertoMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Concierto Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ConciertoPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ConciertoPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Concierto Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ConciertoSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ConciertoSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Concierto San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ConciertoSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ConciertoSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Concierto Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ConciertoToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ConciertoToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Concierto Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ConciertoValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ConciertoValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Concierto Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ConciertoZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ConciertoZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Concierto Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CongresoBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CongresoBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Congreso Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CongresoBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CongresoBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Congreso Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CongresoCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CongresoCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Congreso Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CongresoSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CongresoSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Congreso San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CongresoSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CongresoSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Congreso Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CongresoToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CongresoToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Congreso Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CongresoValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CongresoValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Congreso Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#CongresoZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#CongresoZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Congreso Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Cádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#Cádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FeriaBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FeriaBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Feria Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FeriaCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FeriaCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Feria Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FeriaMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FeriaMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Feria Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FeriaMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FeriaMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Feria Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FeriaPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FeriaPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Feria Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FeriaSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FeriaSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Feria Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FeriaToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FeriaToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Feria Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FeriaZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FeriaZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Feria Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#FestivalZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#FestivalZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Event"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <rdfs:comment>Event </rdfs:comment>
+        <rdfs:label>Festival Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelDelMarBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelDelMarBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Del Mar Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelDelMarCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelDelMarCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Del Mar Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelDelMarMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelDelMarMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Del Mar Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelDelMarMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelDelMarMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Del Mar Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelDelMarPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelDelMarPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.6</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Del Mar Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelDelMarSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelDelMarSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Del Mar San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelDelMarSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelDelMarSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Del Mar Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelDelMarToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelDelMarToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Del Mar Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelDelMarValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelDelMarValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Del Mar Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelDelMarZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelDelMarZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Del Mar Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelPalaceBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelPalaceBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Palace Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelPalaceBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelPalaceBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Palace Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelPalaceCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelPalaceCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Palace Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelPalaceMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelPalaceMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Palace Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelPalaceMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelPalaceMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Palace Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelPalacePamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelPalacePamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Palace Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelPalaceToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelPalaceToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Palace Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelPalaceZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelPalaceZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Palace Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelRoyalBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelRoyalBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Royal Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelRoyalBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelRoyalBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Royal Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelRoyalCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelRoyalCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Royal Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelRoyalMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelRoyalMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Royal Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelRoyalMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelRoyalMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Royal Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelRoyalPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelRoyalPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.9</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Royal Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelRoyalSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelRoyalSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Royal San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelRoyalSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelRoyalSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Royal Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelRoyalValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelRoyalValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Royal Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelRoyalZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelRoyalZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Royal Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelSolBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelSolBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Sol Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelSolBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelSolBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Sol Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelSolCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelSolCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Sol Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelSolMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelSolMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Sol Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelSolMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelSolMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Sol Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelSolSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelSolSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Sol San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelSolSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelSolSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Sol Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelSolValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelSolValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Sol Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelSolZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelSolZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.6</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Sol Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#HotelVistaZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#HotelVistaZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Hotel"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</tourism:hasRating>
+        <rdfs:comment>Hotel </rdfs:comment>
+        <rdfs:label>Hotel Vista Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Madrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#Madrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MetroBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MetroBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Metro Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MetroBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MetroBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Metro Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MetroCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MetroCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Metro Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MetroMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MetroMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Metro Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MetroMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MetroMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Metro Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MetroPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MetroPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Metro Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MetroSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MetroSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Metro San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MetroSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MetroSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Metro Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MetroToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MetroToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Metro Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MetroZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MetroZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Metro Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MoviBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MoviBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Movi Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MoviBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MoviBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Movi Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MoviCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MoviCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Movi Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MoviMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MoviMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Movi Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MoviMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MoviMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Movi Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MoviPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MoviPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Movi Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MoviSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MoviSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Movi San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MoviSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MoviSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Movi Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MoviToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MoviToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Movi Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MoviValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MoviValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Movi Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MuseoBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MuseoBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Museo Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MuseoBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MuseoBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Museo Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MuseoCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MuseoCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Museo Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MuseoMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MuseoMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Museo Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MuseoMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MuseoMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Museo Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MuseoPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MuseoPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Museo Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MuseoSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MuseoSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Museo San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MuseoSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MuseoSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Museo Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MuseoToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MuseoToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Museo Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#MuseoZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#MuseoZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Museo Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Málaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#Málaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#PalacioBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#PalacioBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Palacio Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#PalacioBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#PalacioBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Palacio Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#PalacioCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#PalacioCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Palacio Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#PalacioMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#PalacioMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.9</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Palacio Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#PalacioMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#PalacioMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.9</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Palacio Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#PalacioPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#PalacioPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Palacio Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#PalacioToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#PalacioToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.6</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Palacio Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#PalacioValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#PalacioValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Palacio Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#PalacioZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#PalacioZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Palacio Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Pamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#Pamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParqueBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParqueBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParqueBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParqueBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParqueCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParqueCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParqueMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParqueMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParqueMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParqueMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParquePamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParquePamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParqueSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParqueSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.9</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParqueSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParqueSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParqueToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParqueToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParqueValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParqueValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#ParqueZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#ParqueZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Attraction"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</tourism:hasRating>
+        <rdfs:comment>Attraction </rdfs:comment>
+        <rdfs:label>Parque Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Delicia Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Delicia Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Delicia Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Delicia Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Delicia Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Delicia Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.6</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Delicia San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Delicia Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteDeliciaValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteDeliciaValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Delicia Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.9</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Delicia Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Fusión Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteFusiónBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteFusiónBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Fusión Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteFusiónCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteFusiónCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Fusión Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteFusiónMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteFusiónMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Fusión Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteFusiónMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteFusiónMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Fusión Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteFusiónPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteFusiónPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Fusión Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteFusiónSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteFusiónSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Fusión Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteFusiónToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteFusiónToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Fusión Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteFusiónValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteFusiónValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Fusión Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.9</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Fusión Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Gourmet Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteGourmetCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteGourmetCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Gourmet Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteGourmetMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteGourmetMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Gourmet Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteGourmetMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteGourmetMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Gourmet Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteGourmetPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteGourmetPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Gourmet Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Gourmet San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteGourmetSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteGourmetSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Gourmet Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteGourmetToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteGourmetToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Gourmet Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteGourmetValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteGourmetValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Gourmet Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Gourmet Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteSaborCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteSaborCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.6</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Sabor Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteSaborMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteSaborMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Sabor Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Sabor San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteSaborSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteSaborSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Sabor Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteSaborValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteSaborValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Sabor Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteSaborZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteSaborZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Sabor Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Tradición Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Tradición Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Tradición Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Tradición San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Tradición Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteTradiciónToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteTradiciónToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Tradición Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Restaurant"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <tourism:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</tourism:hasRating>
+        <rdfs:comment>Restaurant </rdfs:comment>
+        <rdfs:label>Restaurante Tradición Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#SanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#SanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Sevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#Sevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Toledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#Toledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#TransBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#TransBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Trans Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#TransCádiz -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#TransCádiz">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Cádiz"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Trans Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#TransMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#TransMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Trans Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#TransMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#TransMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Trans Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#TransPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#TransPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Trans Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#TransSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#TransSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Trans San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#TransSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#TransSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Trans Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#TransToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#TransToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Trans Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#TransValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#TransValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Trans Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#TransZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#TransZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Trans Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#UrbanBarcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#UrbanBarcelona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Barcelona"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Urban Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#UrbanBilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#UrbanBilbao">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Bilbao"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Urban Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#UrbanMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#UrbanMadrid">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Madrid"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Urban Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#UrbanMálaga -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#UrbanMálaga">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Málaga"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Urban Málaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#UrbanPamplona -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#UrbanPamplona">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Pamplona"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Urban Pamplona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#UrbanSanSebastián -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#UrbanSanSebastián">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#SanSebastián"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Urban San Sebastián</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#UrbanSevilla -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#UrbanSevilla">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Sevilla"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Urban Sevilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#UrbanToledo -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#UrbanToledo">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Toledo"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Urban Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#UrbanValencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#UrbanValencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Valencia"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Urban Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#UrbanZaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#UrbanZaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#Transport"/>
+        <tourism:locatedIn rdf:resource="http://aula.uoc.edu/tourism#Zaragoza"/>
+        <rdfs:comment>Transport </rdfs:comment>
+        <rdfs:label>Urban Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Valencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#Valencia">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aula.uoc.edu/tourism#Zaragoza -->
+
+
+    <owl:NamedIndividual rdf:about="http://aula.uoc.edu/tourism#Zaragoza">
+        <rdf:type rdf:resource="http://aula.uoc.edu/tourism#City"/>
+        <rdfs:comment>City </rdfs:comment>
+        <rdfs:label>Zaragoza</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

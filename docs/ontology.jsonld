@@ -1,0 +1,4346 @@
+[ {
+  "@id" : "http://aula.uoc.edu/tourism#Attraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Barcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Bilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CarnavalBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CarnavalBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CarnavalCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CarnavalMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CarnavalMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CarnavalSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CarnavalSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CarnavalToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CarnavalValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CarnavalZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.5"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.5"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.5"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CastilloZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.5"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CatedralBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catedral Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CatedralBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catedral Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CatedralCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catedral Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CatedralMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catedral Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CatedralMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catedral Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CatedralPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catedral Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CatedralSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catedral Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CatedralToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catedral Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CatedralValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catedral Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CatedralZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catedral Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CityBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CityBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CityCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CityMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CityMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CityPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CitySevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CityToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CityZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ConciertoCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concierto Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ConciertoMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concierto Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ConciertoPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concierto Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ConciertoSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concierto San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ConciertoSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concierto Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ConciertoToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concierto Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ConciertoValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concierto Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ConciertoZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concierto Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CongresoBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Congreso Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CongresoBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Congreso Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CongresoCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Congreso Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CongresoSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Congreso San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CongresoSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Congreso Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CongresoToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Congreso Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CongresoValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Congreso Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#CongresoZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Congreso Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Cádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FeriaBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feria Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FeriaCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feria Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FeriaMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feria Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FeriaMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feria Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FeriaPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feria Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FeriaSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feria Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FeriaToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feria Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FeriaZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feria Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#FestivalZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Festival Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Hotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelDelMarBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Del Mar Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelDelMarCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Del Mar Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelDelMarMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Del Mar Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelDelMarMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Del Mar Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelDelMarPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Del Mar Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelDelMarSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Del Mar San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelDelMarSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Del Mar Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelDelMarToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Del Mar Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelDelMarValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Del Mar Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelDelMarZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "5.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Del Mar Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelPalaceBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Palace Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelPalaceBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Palace Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelPalaceCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Palace Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelPalaceMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Palace Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelPalaceMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Palace Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelPalacePamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.1"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Palace Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelPalaceToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Palace Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelPalaceZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Palace Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelRoyalBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Royal Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelRoyalBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Royal Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelRoyalCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Royal Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelRoyalMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Royal Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelRoyalMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Royal Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelRoyalPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Royal Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelRoyalSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Royal San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelRoyalSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Royal Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelRoyalValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Royal Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelRoyalZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Royal Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelSolBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Sol Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelSolBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Sol Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelSolCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Sol Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelSolMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Sol Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelSolMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Sol Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelSolSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Sol San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelSolSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Sol Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelSolValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Sol Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelSolZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Sol Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.5"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.5"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#HotelVistaZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Vista Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Madrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MetroBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MetroBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MetroCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MetroMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MetroMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MetroPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MetroSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MetroSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MetroToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MetroZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MoviBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MoviBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MoviCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MoviMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MoviMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MoviPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MoviSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MoviSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MoviToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MoviValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MuseoBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MuseoBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MuseoCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MuseoMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MuseoMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MuseoPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "5.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MuseoSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MuseoSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MuseoToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#MuseoZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.1"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Málaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#PalacioBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Palacio Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#PalacioBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Palacio Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#PalacioCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Palacio Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#PalacioMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Palacio Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#PalacioMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Palacio Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#PalacioPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Palacio Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#PalacioToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Palacio Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#PalacioValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Palacio Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#PalacioZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Palacio Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Pamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParqueBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParqueBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParqueCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.1"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParqueMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParqueMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParquePamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.1"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParqueSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParqueSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParqueToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParqueValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#ParqueZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.5"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Attraction "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.5"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteDeliciaValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Fusión Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteFusiónBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "5.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Fusión Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteFusiónCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Fusión Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteFusiónMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Fusión Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteFusiónMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Fusión Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteFusiónPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Fusión Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteFusiónSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Fusión Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteFusiónToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Fusión Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteFusiónValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Fusión Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Fusión Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteGourmetCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteGourmetMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteGourmetMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteGourmetPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "5.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteGourmetSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteGourmetToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.5"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteGourmetValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteSaborCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Sabor Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteSaborMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Sabor Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.9"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Sabor San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteSaborSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Sabor Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteSaborValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Sabor Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteSaborZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Sabor Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Tradición Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Tradición Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.1"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Tradición Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "5.0"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Tradición San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Tradición Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteTradiciónToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Tradición Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.4"
+  } ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Tradición Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#SanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Sevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Toledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#TransBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#TransCádiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans Cádiz"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#TransMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#TransMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#TransPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#TransSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#TransSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#TransToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#TransValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#TransZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#UrbanBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urban Barcelona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#UrbanBilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urban Bilbao"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#UrbanMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urban Madrid"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#UrbanMálaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urban Málaga"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#UrbanPamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urban Pamplona"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#UrbanSanSebastián",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#SanSebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urban San Sebastián"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#UrbanSevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urban Sevilla"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#UrbanToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urban Toledo"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#UrbanValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urban Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#UrbanZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://aula.uoc.edu/tourism#locatedIn" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Urban Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Valencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Valencia"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#Zaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Zaragoza"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#hasPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#hasRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://aula.uoc.edu/tourism#locatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://aula.uoc.edu/tourism#City"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://rafaelromero.org/ontologia/turismo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Rafael Romero Montilla"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-04-27"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "es",
+    "@value" : "Ontología que modela ciudades, eventos turísticos, alojamientos, atracciones culturales, restaurantes y recomendaciones urbanas personalizadas."
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@value" : "Licencia Creative Commons Attribution 4.0 (CC BY 4.0)"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "es",
+    "@value" : "Ontología de Turismo Inteligente"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "turismo"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://rafaelromero.org/ontologia/turismo#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v1.0"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://example.org"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
