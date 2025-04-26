@@ -1,0 +1,2229 @@
+@prefix : <http://rafaelromero.org/ontologia/turismo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://rafaelromero.org/ontologia/turismo#> .
+
+<http://rafaelromero.org/ontologia/turismo> rdf:type owl:Ontology ;
+                                             <http://purl.org/dc/elements/1.1/creator> "Rafael Romero Montilla" ;
+                                             <http://purl.org/dc/elements/1.1/date> "2025-04-27"^^xsd:date ;
+                                             <http://purl.org/dc/elements/1.1/description> "Ontología que modela ciudades, eventos turísticos, alojamientos, atracciones culturales, restaurantes y recomendaciones urbanas personalizadas."@es ;
+                                             <http://purl.org/dc/elements/1.1/rights> "Licencia Creative Commons Attribution 4.0 (CC BY 4.0)" ;
+                                             <http://purl.org/dc/elements/1.1/title> "Ontología de Turismo Inteligente"@es ;
+                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "turismo" ;
+                                             <http://purl.org/vocab/vann/preferredNamespaceUri> "http://rafaelromero.org/ontologia/turismo#" ;
+                                             owl:versionInfo "v1.0" ;
+                                             <http://xmlns.com/foaf/0.1/homepage> <https://example.org> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://aula.uoc.edu/tourism#locatedIn
+<http://aula.uoc.edu/tourism#locatedIn> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://aula.uoc.edu/tourism#Hotel> ;
+                                        rdfs:range <http://aula.uoc.edu/tourism#City> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://aula.uoc.edu/tourism#hasPrice
+<http://aula.uoc.edu/tourism#hasPrice> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://aula.uoc.edu/tourism#Hotel> ;
+                                       rdfs:range xsd:float .
+
+
+###  http://aula.uoc.edu/tourism#hasRating
+<http://aula.uoc.edu/tourism#hasRating> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://aula.uoc.edu/tourism#Hotel> ;
+                                        rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://aula.uoc.edu/tourism#Attraction
+<http://aula.uoc.edu/tourism#Attraction> rdf:type owl:Class .
+
+
+###  http://aula.uoc.edu/tourism#City
+<http://aula.uoc.edu/tourism#City> rdf:type owl:Class .
+
+
+###  http://aula.uoc.edu/tourism#Event
+<http://aula.uoc.edu/tourism#Event> rdf:type owl:Class .
+
+
+###  http://aula.uoc.edu/tourism#Hotel
+<http://aula.uoc.edu/tourism#Hotel> rdf:type owl:Class .
+
+
+###  http://aula.uoc.edu/tourism#Restaurant
+<http://aula.uoc.edu/tourism#Restaurant> rdf:type owl:Class .
+
+
+###  http://aula.uoc.edu/tourism#Transport
+<http://aula.uoc.edu/tourism#Transport> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://aula.uoc.edu/tourism#Barcelona
+<http://aula.uoc.edu/tourism#Barcelona> rdf:type owl:NamedIndividual ,
+                                                 <http://aula.uoc.edu/tourism#City> ;
+                                        rdfs:comment "City " ;
+                                        rdfs:label "Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#Bilbao
+<http://aula.uoc.edu/tourism#Bilbao> rdf:type owl:NamedIndividual ,
+                                              <http://aula.uoc.edu/tourism#City> ;
+                                     rdfs:comment "City " ;
+                                     rdfs:label "Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#CarnavalBarcelona
+<http://aula.uoc.edu/tourism#CarnavalBarcelona> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Event> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                rdfs:comment "Event " ;
+                                                rdfs:label "Carnaval Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#CarnavalBilbao
+<http://aula.uoc.edu/tourism#CarnavalBilbao> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Carnaval Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#CarnavalCádiz
+<http://aula.uoc.edu/tourism#CarnavalCádiz> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Event> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                            rdfs:comment "Event " ;
+                                            rdfs:label "Carnaval Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#CarnavalMadrid
+<http://aula.uoc.edu/tourism#CarnavalMadrid> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Carnaval Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#CarnavalMálaga
+<http://aula.uoc.edu/tourism#CarnavalMálaga> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Carnaval Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#CarnavalSanSebastián
+<http://aula.uoc.edu/tourism#CarnavalSanSebastián> rdf:type owl:NamedIndividual ,
+                                                            <http://aula.uoc.edu/tourism#Event> ;
+                                                   <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                   rdfs:comment "Event " ;
+                                                   rdfs:label "Carnaval San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#CarnavalSevilla
+<http://aula.uoc.edu/tourism#CarnavalSevilla> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Event> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                              rdfs:comment "Event " ;
+                                              rdfs:label "Carnaval Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#CarnavalToledo
+<http://aula.uoc.edu/tourism#CarnavalToledo> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Carnaval Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#CarnavalValencia
+<http://aula.uoc.edu/tourism#CarnavalValencia> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Event> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                               rdfs:comment "Event " ;
+                                               rdfs:label "Carnaval Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#CarnavalZaragoza
+<http://aula.uoc.edu/tourism#CarnavalZaragoza> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Event> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                               rdfs:comment "Event " ;
+                                               rdfs:label "Carnaval Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloBarcelona
+<http://aula.uoc.edu/tourism#CastilloBarcelona> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Attraction> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "4.5"^^xsd:float ;
+                                                rdfs:comment "Attraction " ;
+                                                rdfs:label "Castillo Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloBilbao
+<http://aula.uoc.edu/tourism#CastilloBilbao> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Castillo Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloCádiz
+<http://aula.uoc.edu/tourism#CastilloCádiz> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Attraction> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                            <http://aula.uoc.edu/tourism#hasRating> "3.5"^^xsd:float ;
+                                            rdfs:comment "Attraction " ;
+                                            rdfs:label "Castillo Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloMadrid
+<http://aula.uoc.edu/tourism#CastilloMadrid> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.0"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Castillo Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloMálaga
+<http://aula.uoc.edu/tourism#CastilloMálaga> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.3"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Castillo Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloPamplona
+<http://aula.uoc.edu/tourism#CastilloPamplona> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Attraction> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "3.9"^^xsd:float ;
+                                               rdfs:comment "Attraction " ;
+                                               rdfs:label "Castillo Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloSanSebastián
+<http://aula.uoc.edu/tourism#CastilloSanSebastián> rdf:type owl:NamedIndividual ,
+                                                            <http://aula.uoc.edu/tourism#Attraction> ;
+                                                   <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                   <http://aula.uoc.edu/tourism#hasRating> "4.5"^^xsd:float ;
+                                                   rdfs:comment "Attraction " ;
+                                                   rdfs:label "Castillo San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloSevilla
+<http://aula.uoc.edu/tourism#CastilloSevilla> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Attraction> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                              <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                              rdfs:comment "Attraction " ;
+                                              rdfs:label "Castillo Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloToledo
+<http://aula.uoc.edu/tourism#CastilloToledo> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Castillo Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloValencia
+<http://aula.uoc.edu/tourism#CastilloValencia> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Attraction> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.7"^^xsd:float ;
+                                               rdfs:comment "Attraction " ;
+                                               rdfs:label "Castillo Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#CastilloZaragoza
+<http://aula.uoc.edu/tourism#CastilloZaragoza> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Attraction> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "3.5"^^xsd:float ;
+                                               rdfs:comment "Attraction " ;
+                                               rdfs:label "Castillo Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#CatedralBarcelona
+<http://aula.uoc.edu/tourism#CatedralBarcelona> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Attraction> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "4.3"^^xsd:float ;
+                                                rdfs:comment "Attraction " ;
+                                                rdfs:label "Catedral Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#CatedralBilbao
+<http://aula.uoc.edu/tourism#CatedralBilbao> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Catedral Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#CatedralCádiz
+<http://aula.uoc.edu/tourism#CatedralCádiz> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Attraction> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                            <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                            rdfs:comment "Attraction " ;
+                                            rdfs:label "Catedral Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#CatedralMadrid
+<http://aula.uoc.edu/tourism#CatedralMadrid> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Catedral Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#CatedralMálaga
+<http://aula.uoc.edu/tourism#CatedralMálaga> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Catedral Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#CatedralPamplona
+<http://aula.uoc.edu/tourism#CatedralPamplona> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Attraction> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.0"^^xsd:float ;
+                                               rdfs:comment "Attraction " ;
+                                               rdfs:label "Catedral Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#CatedralSevilla
+<http://aula.uoc.edu/tourism#CatedralSevilla> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Attraction> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                              <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                              rdfs:comment "Attraction " ;
+                                              rdfs:label "Catedral Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#CatedralToledo
+<http://aula.uoc.edu/tourism#CatedralToledo> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Catedral Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#CatedralValencia
+<http://aula.uoc.edu/tourism#CatedralValencia> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Attraction> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.0"^^xsd:float ;
+                                               rdfs:comment "Attraction " ;
+                                               rdfs:label "Catedral Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#CatedralZaragoza
+<http://aula.uoc.edu/tourism#CatedralZaragoza> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Attraction> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                               rdfs:comment "Attraction " ;
+                                               rdfs:label "Catedral Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#CityBarcelona
+<http://aula.uoc.edu/tourism#CityBarcelona> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Transport> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                            rdfs:comment "Transport " ;
+                                            rdfs:label "City Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#CityBilbao
+<http://aula.uoc.edu/tourism#CityBilbao> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Transport> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                         rdfs:comment "Transport " ;
+                                         rdfs:label "City Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#CityCádiz
+<http://aula.uoc.edu/tourism#CityCádiz> rdf:type owl:NamedIndividual ,
+                                                 <http://aula.uoc.edu/tourism#Transport> ;
+                                        <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                        rdfs:comment "Transport " ;
+                                        rdfs:label "City Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#CityMadrid
+<http://aula.uoc.edu/tourism#CityMadrid> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Transport> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                         rdfs:comment "Transport " ;
+                                         rdfs:label "City Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#CityMálaga
+<http://aula.uoc.edu/tourism#CityMálaga> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Transport> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                         rdfs:comment "Transport " ;
+                                         rdfs:label "City Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#CityPamplona
+<http://aula.uoc.edu/tourism#CityPamplona> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Transport> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                           rdfs:comment "Transport " ;
+                                           rdfs:label "City Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#CitySevilla
+<http://aula.uoc.edu/tourism#CitySevilla> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "City Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#CityToledo
+<http://aula.uoc.edu/tourism#CityToledo> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Transport> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                         rdfs:comment "Transport " ;
+                                         rdfs:label "City Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#CityZaragoza
+<http://aula.uoc.edu/tourism#CityZaragoza> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Transport> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                           rdfs:comment "Transport " ;
+                                           rdfs:label "City Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#ConciertoCádiz
+<http://aula.uoc.edu/tourism#ConciertoCádiz> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Concierto Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#ConciertoMálaga
+<http://aula.uoc.edu/tourism#ConciertoMálaga> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Event> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                              rdfs:comment "Event " ;
+                                              rdfs:label "Concierto Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#ConciertoPamplona
+<http://aula.uoc.edu/tourism#ConciertoPamplona> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Event> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                                rdfs:comment "Event " ;
+                                                rdfs:label "Concierto Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#ConciertoSanSebastián
+<http://aula.uoc.edu/tourism#ConciertoSanSebastián> rdf:type owl:NamedIndividual ,
+                                                             <http://aula.uoc.edu/tourism#Event> ;
+                                                    <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                    rdfs:comment "Event " ;
+                                                    rdfs:label "Concierto San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#ConciertoSevilla
+<http://aula.uoc.edu/tourism#ConciertoSevilla> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Event> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                               rdfs:comment "Event " ;
+                                               rdfs:label "Concierto Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#ConciertoToledo
+<http://aula.uoc.edu/tourism#ConciertoToledo> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Event> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                              rdfs:comment "Event " ;
+                                              rdfs:label "Concierto Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#ConciertoValencia
+<http://aula.uoc.edu/tourism#ConciertoValencia> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Event> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                                rdfs:comment "Event " ;
+                                                rdfs:label "Concierto Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#ConciertoZaragoza
+<http://aula.uoc.edu/tourism#ConciertoZaragoza> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Event> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                                rdfs:comment "Event " ;
+                                                rdfs:label "Concierto Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#CongresoBarcelona
+<http://aula.uoc.edu/tourism#CongresoBarcelona> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Event> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                rdfs:comment "Event " ;
+                                                rdfs:label "Congreso Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#CongresoBilbao
+<http://aula.uoc.edu/tourism#CongresoBilbao> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Congreso Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#CongresoCádiz
+<http://aula.uoc.edu/tourism#CongresoCádiz> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Event> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                            rdfs:comment "Event " ;
+                                            rdfs:label "Congreso Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#CongresoSanSebastián
+<http://aula.uoc.edu/tourism#CongresoSanSebastián> rdf:type owl:NamedIndividual ,
+                                                            <http://aula.uoc.edu/tourism#Event> ;
+                                                   <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                   rdfs:comment "Event " ;
+                                                   rdfs:label "Congreso San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#CongresoSevilla
+<http://aula.uoc.edu/tourism#CongresoSevilla> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Event> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                              rdfs:comment "Event " ;
+                                              rdfs:label "Congreso Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#CongresoToledo
+<http://aula.uoc.edu/tourism#CongresoToledo> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Congreso Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#CongresoValencia
+<http://aula.uoc.edu/tourism#CongresoValencia> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Event> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                               rdfs:comment "Event " ;
+                                               rdfs:label "Congreso Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#CongresoZaragoza
+<http://aula.uoc.edu/tourism#CongresoZaragoza> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Event> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                               rdfs:comment "Event " ;
+                                               rdfs:label "Congreso Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#Cádiz
+<http://aula.uoc.edu/tourism#Cádiz> rdf:type owl:NamedIndividual ,
+                                             <http://aula.uoc.edu/tourism#City> ;
+                                    rdfs:comment "City " ;
+                                    rdfs:label "Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#FeriaBarcelona
+<http://aula.uoc.edu/tourism#FeriaBarcelona> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Feria Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#FeriaCádiz
+<http://aula.uoc.edu/tourism#FeriaCádiz> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Event> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                         rdfs:comment "Event " ;
+                                         rdfs:label "Feria Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#FeriaMadrid
+<http://aula.uoc.edu/tourism#FeriaMadrid> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Event> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                          rdfs:comment "Event " ;
+                                          rdfs:label "Feria Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#FeriaMálaga
+<http://aula.uoc.edu/tourism#FeriaMálaga> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Event> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                          rdfs:comment "Event " ;
+                                          rdfs:label "Feria Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#FeriaPamplona
+<http://aula.uoc.edu/tourism#FeriaPamplona> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Event> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                            rdfs:comment "Event " ;
+                                            rdfs:label "Feria Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#FeriaSevilla
+<http://aula.uoc.edu/tourism#FeriaSevilla> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Event> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                           rdfs:comment "Event " ;
+                                           rdfs:label "Feria Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#FeriaToledo
+<http://aula.uoc.edu/tourism#FeriaToledo> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Event> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                          rdfs:comment "Event " ;
+                                          rdfs:label "Feria Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#FeriaZaragoza
+<http://aula.uoc.edu/tourism#FeriaZaragoza> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Event> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                            rdfs:comment "Event " ;
+                                            rdfs:label "Feria Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalBarcelona
+<http://aula.uoc.edu/tourism#FestivalBarcelona> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Event> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                rdfs:comment "Event " ;
+                                                rdfs:label "Festival Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalBilbao
+<http://aula.uoc.edu/tourism#FestivalBilbao> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Festival Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalCádiz
+<http://aula.uoc.edu/tourism#FestivalCádiz> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Event> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                            rdfs:comment "Event " ;
+                                            rdfs:label "Festival Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalMadrid
+<http://aula.uoc.edu/tourism#FestivalMadrid> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Festival Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalMálaga
+<http://aula.uoc.edu/tourism#FestivalMálaga> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Festival Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalPamplona
+<http://aula.uoc.edu/tourism#FestivalPamplona> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Event> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                               rdfs:comment "Event " ;
+                                               rdfs:label "Festival Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalSanSebastián
+<http://aula.uoc.edu/tourism#FestivalSanSebastián> rdf:type owl:NamedIndividual ,
+                                                            <http://aula.uoc.edu/tourism#Event> ;
+                                                   <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                   rdfs:comment "Event " ;
+                                                   rdfs:label "Festival San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalSevilla
+<http://aula.uoc.edu/tourism#FestivalSevilla> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Event> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                              rdfs:comment "Event " ;
+                                              rdfs:label "Festival Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalToledo
+<http://aula.uoc.edu/tourism#FestivalToledo> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Event> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                             rdfs:comment "Event " ;
+                                             rdfs:label "Festival Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalValencia
+<http://aula.uoc.edu/tourism#FestivalValencia> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Event> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                               rdfs:comment "Event " ;
+                                               rdfs:label "Festival Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#FestivalZaragoza
+<http://aula.uoc.edu/tourism#FestivalZaragoza> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Event> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                               rdfs:comment "Event " ;
+                                               rdfs:label "Festival Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#HotelDelMarBarcelona
+<http://aula.uoc.edu/tourism#HotelDelMarBarcelona> rdf:type owl:NamedIndividual ,
+                                                            <http://aula.uoc.edu/tourism#Hotel> ;
+                                                   <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                   <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                                   rdfs:comment "Hotel " ;
+                                                   rdfs:label "Hotel Del Mar Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#HotelDelMarCádiz
+<http://aula.uoc.edu/tourism#HotelDelMarCádiz> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Del Mar Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#HotelDelMarMadrid
+<http://aula.uoc.edu/tourism#HotelDelMarMadrid> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Hotel> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "3.8"^^xsd:float ;
+                                                rdfs:comment "Hotel " ;
+                                                rdfs:label "Hotel Del Mar Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#HotelDelMarMálaga
+<http://aula.uoc.edu/tourism#HotelDelMarMálaga> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Hotel> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "4.8"^^xsd:float ;
+                                                rdfs:comment "Hotel " ;
+                                                rdfs:label "Hotel Del Mar Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#HotelDelMarPamplona
+<http://aula.uoc.edu/tourism#HotelDelMarPamplona> rdf:type owl:NamedIndividual ,
+                                                           <http://aula.uoc.edu/tourism#Hotel> ;
+                                                  <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                                  <http://aula.uoc.edu/tourism#hasRating> "3.6"^^xsd:float ;
+                                                  rdfs:comment "Hotel " ;
+                                                  rdfs:label "Hotel Del Mar Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#HotelDelMarSanSebastián
+<http://aula.uoc.edu/tourism#HotelDelMarSanSebastián> rdf:type owl:NamedIndividual ,
+                                                               <http://aula.uoc.edu/tourism#Hotel> ;
+                                                      <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                      <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                                      rdfs:comment "Hotel " ;
+                                                      rdfs:label "Hotel Del Mar San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#HotelDelMarSevilla
+<http://aula.uoc.edu/tourism#HotelDelMarSevilla> rdf:type owl:NamedIndividual ,
+                                                          <http://aula.uoc.edu/tourism#Hotel> ;
+                                                 <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                                 <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                                 rdfs:comment "Hotel " ;
+                                                 rdfs:label "Hotel Del Mar Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#HotelDelMarToledo
+<http://aula.uoc.edu/tourism#HotelDelMarToledo> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Hotel> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "4.3"^^xsd:float ;
+                                                rdfs:comment "Hotel " ;
+                                                rdfs:label "Hotel Del Mar Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#HotelDelMarValencia
+<http://aula.uoc.edu/tourism#HotelDelMarValencia> rdf:type owl:NamedIndividual ,
+                                                           <http://aula.uoc.edu/tourism#Hotel> ;
+                                                  <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                                  <http://aula.uoc.edu/tourism#hasRating> "3.8"^^xsd:float ;
+                                                  rdfs:comment "Hotel " ;
+                                                  rdfs:label "Hotel Del Mar Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#HotelDelMarZaragoza
+<http://aula.uoc.edu/tourism#HotelDelMarZaragoza> rdf:type owl:NamedIndividual ,
+                                                           <http://aula.uoc.edu/tourism#Hotel> ;
+                                                  <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                                  <http://aula.uoc.edu/tourism#hasRating> "5.0"^^xsd:float ;
+                                                  rdfs:comment "Hotel " ;
+                                                  rdfs:label "Hotel Del Mar Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#HotelPalaceBarcelona
+<http://aula.uoc.edu/tourism#HotelPalaceBarcelona> rdf:type owl:NamedIndividual ,
+                                                            <http://aula.uoc.edu/tourism#Hotel> ;
+                                                   <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                   <http://aula.uoc.edu/tourism#hasRating> "3.8"^^xsd:float ;
+                                                   rdfs:comment "Hotel " ;
+                                                   rdfs:label "Hotel Palace Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#HotelPalaceBilbao
+<http://aula.uoc.edu/tourism#HotelPalaceBilbao> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Hotel> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                                rdfs:comment "Hotel " ;
+                                                rdfs:label "Hotel Palace Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#HotelPalaceCádiz
+<http://aula.uoc.edu/tourism#HotelPalaceCádiz> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Palace Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#HotelPalaceMadrid
+<http://aula.uoc.edu/tourism#HotelPalaceMadrid> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Hotel> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                                rdfs:comment "Hotel " ;
+                                                rdfs:label "Hotel Palace Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#HotelPalaceMálaga
+<http://aula.uoc.edu/tourism#HotelPalaceMálaga> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Hotel> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "4.8"^^xsd:float ;
+                                                rdfs:comment "Hotel " ;
+                                                rdfs:label "Hotel Palace Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#HotelPalacePamplona
+<http://aula.uoc.edu/tourism#HotelPalacePamplona> rdf:type owl:NamedIndividual ,
+                                                           <http://aula.uoc.edu/tourism#Hotel> ;
+                                                  <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                                  <http://aula.uoc.edu/tourism#hasRating> "4.1"^^xsd:float ;
+                                                  rdfs:comment "Hotel " ;
+                                                  rdfs:label "Hotel Palace Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#HotelPalaceToledo
+<http://aula.uoc.edu/tourism#HotelPalaceToledo> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Hotel> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                                rdfs:comment "Hotel " ;
+                                                rdfs:label "Hotel Palace Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#HotelPalaceZaragoza
+<http://aula.uoc.edu/tourism#HotelPalaceZaragoza> rdf:type owl:NamedIndividual ,
+                                                           <http://aula.uoc.edu/tourism#Hotel> ;
+                                                  <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                                  <http://aula.uoc.edu/tourism#hasRating> "3.8"^^xsd:float ;
+                                                  rdfs:comment "Hotel " ;
+                                                  rdfs:label "Hotel Palace Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#HotelRoyalBarcelona
+<http://aula.uoc.edu/tourism#HotelRoyalBarcelona> rdf:type owl:NamedIndividual ,
+                                                           <http://aula.uoc.edu/tourism#Hotel> ;
+                                                  <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                  <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                                  rdfs:comment "Hotel " ;
+                                                  rdfs:label "Hotel Royal Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#HotelRoyalBilbao
+<http://aula.uoc.edu/tourism#HotelRoyalBilbao> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Royal Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#HotelRoyalCádiz
+<http://aula.uoc.edu/tourism#HotelRoyalCádiz> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Hotel> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                              <http://aula.uoc.edu/tourism#hasRating> "3.8"^^xsd:float ;
+                                              rdfs:comment "Hotel " ;
+                                              rdfs:label "Hotel Royal Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#HotelRoyalMadrid
+<http://aula.uoc.edu/tourism#HotelRoyalMadrid> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Royal Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#HotelRoyalMálaga
+<http://aula.uoc.edu/tourism#HotelRoyalMálaga> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Royal Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#HotelRoyalPamplona
+<http://aula.uoc.edu/tourism#HotelRoyalPamplona> rdf:type owl:NamedIndividual ,
+                                                          <http://aula.uoc.edu/tourism#Hotel> ;
+                                                 <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                                 <http://aula.uoc.edu/tourism#hasRating> "3.9"^^xsd:float ;
+                                                 rdfs:comment "Hotel " ;
+                                                 rdfs:label "Hotel Royal Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#HotelRoyalSanSebastián
+<http://aula.uoc.edu/tourism#HotelRoyalSanSebastián> rdf:type owl:NamedIndividual ,
+                                                              <http://aula.uoc.edu/tourism#Hotel> ;
+                                                     <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                     <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                                     rdfs:comment "Hotel " ;
+                                                     rdfs:label "Hotel Royal San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#HotelRoyalSevilla
+<http://aula.uoc.edu/tourism#HotelRoyalSevilla> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Hotel> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                                rdfs:comment "Hotel " ;
+                                                rdfs:label "Hotel Royal Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#HotelRoyalValencia
+<http://aula.uoc.edu/tourism#HotelRoyalValencia> rdf:type owl:NamedIndividual ,
+                                                          <http://aula.uoc.edu/tourism#Hotel> ;
+                                                 <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                                 <http://aula.uoc.edu/tourism#hasRating> "4.7"^^xsd:float ;
+                                                 rdfs:comment "Hotel " ;
+                                                 rdfs:label "Hotel Royal Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#HotelRoyalZaragoza
+<http://aula.uoc.edu/tourism#HotelRoyalZaragoza> rdf:type owl:NamedIndividual ,
+                                                          <http://aula.uoc.edu/tourism#Hotel> ;
+                                                 <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                                 <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                                 rdfs:comment "Hotel " ;
+                                                 rdfs:label "Hotel Royal Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#HotelSolBarcelona
+<http://aula.uoc.edu/tourism#HotelSolBarcelona> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Hotel> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                                rdfs:comment "Hotel " ;
+                                                rdfs:label "Hotel Sol Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#HotelSolBilbao
+<http://aula.uoc.edu/tourism#HotelSolBilbao> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Hotel> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                             rdfs:comment "Hotel " ;
+                                             rdfs:label "Hotel Sol Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#HotelSolCádiz
+<http://aula.uoc.edu/tourism#HotelSolCádiz> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Hotel> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                            <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                            rdfs:comment "Hotel " ;
+                                            rdfs:label "Hotel Sol Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#HotelSolMadrid
+<http://aula.uoc.edu/tourism#HotelSolMadrid> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Hotel> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                             rdfs:comment "Hotel " ;
+                                             rdfs:label "Hotel Sol Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#HotelSolMálaga
+<http://aula.uoc.edu/tourism#HotelSolMálaga> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Hotel> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                             rdfs:comment "Hotel " ;
+                                             rdfs:label "Hotel Sol Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#HotelSolSanSebastián
+<http://aula.uoc.edu/tourism#HotelSolSanSebastián> rdf:type owl:NamedIndividual ,
+                                                            <http://aula.uoc.edu/tourism#Hotel> ;
+                                                   <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                   <http://aula.uoc.edu/tourism#hasRating> "4.7"^^xsd:float ;
+                                                   rdfs:comment "Hotel " ;
+                                                   rdfs:label "Hotel Sol San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#HotelSolSevilla
+<http://aula.uoc.edu/tourism#HotelSolSevilla> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Hotel> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                              <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                              rdfs:comment "Hotel " ;
+                                              rdfs:label "Hotel Sol Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#HotelSolValencia
+<http://aula.uoc.edu/tourism#HotelSolValencia> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.8"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Sol Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#HotelSolZaragoza
+<http://aula.uoc.edu/tourism#HotelSolZaragoza> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "3.6"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Sol Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaBarcelona
+<http://aula.uoc.edu/tourism#HotelVistaBarcelona> rdf:type owl:NamedIndividual ,
+                                                           <http://aula.uoc.edu/tourism#Hotel> ;
+                                                  <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                  <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                                  rdfs:comment "Hotel " ;
+                                                  rdfs:label "Hotel Vista Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaBilbao
+<http://aula.uoc.edu/tourism#HotelVistaBilbao> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Vista Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaCádiz
+<http://aula.uoc.edu/tourism#HotelVistaCádiz> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Hotel> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                              <http://aula.uoc.edu/tourism#hasRating> "4.5"^^xsd:float ;
+                                              rdfs:comment "Hotel " ;
+                                              rdfs:label "Hotel Vista Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaMadrid
+<http://aula.uoc.edu/tourism#HotelVistaMadrid> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Vista Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaMálaga
+<http://aula.uoc.edu/tourism#HotelVistaMálaga> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Vista Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaPamplona
+<http://aula.uoc.edu/tourism#HotelVistaPamplona> rdf:type owl:NamedIndividual ,
+                                                          <http://aula.uoc.edu/tourism#Hotel> ;
+                                                 <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                                 <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                                 rdfs:comment "Hotel " ;
+                                                 rdfs:label "Hotel Vista Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaSanSebastián
+<http://aula.uoc.edu/tourism#HotelVistaSanSebastián> rdf:type owl:NamedIndividual ,
+                                                              <http://aula.uoc.edu/tourism#Hotel> ;
+                                                     <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                     <http://aula.uoc.edu/tourism#hasRating> "4.5"^^xsd:float ;
+                                                     rdfs:comment "Hotel " ;
+                                                     rdfs:label "Hotel Vista San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaSevilla
+<http://aula.uoc.edu/tourism#HotelVistaSevilla> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Hotel> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "4.7"^^xsd:float ;
+                                                rdfs:comment "Hotel " ;
+                                                rdfs:label "Hotel Vista Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaToledo
+<http://aula.uoc.edu/tourism#HotelVistaToledo> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Hotel> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                               rdfs:comment "Hotel " ;
+                                               rdfs:label "Hotel Vista Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaValencia
+<http://aula.uoc.edu/tourism#HotelVistaValencia> rdf:type owl:NamedIndividual ,
+                                                          <http://aula.uoc.edu/tourism#Hotel> ;
+                                                 <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                                 <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                                 rdfs:comment "Hotel " ;
+                                                 rdfs:label "Hotel Vista Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#HotelVistaZaragoza
+<http://aula.uoc.edu/tourism#HotelVistaZaragoza> rdf:type owl:NamedIndividual ,
+                                                          <http://aula.uoc.edu/tourism#Hotel> ;
+                                                 <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                                 <http://aula.uoc.edu/tourism#hasRating> "4.7"^^xsd:float ;
+                                                 rdfs:comment "Hotel " ;
+                                                 rdfs:label "Hotel Vista Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#Madrid
+<http://aula.uoc.edu/tourism#Madrid> rdf:type owl:NamedIndividual ,
+                                              <http://aula.uoc.edu/tourism#City> ;
+                                     rdfs:comment "City " ;
+                                     rdfs:label "Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#MetroBarcelona
+<http://aula.uoc.edu/tourism#MetroBarcelona> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Transport> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                             rdfs:comment "Transport " ;
+                                             rdfs:label "Metro Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#MetroBilbao
+<http://aula.uoc.edu/tourism#MetroBilbao> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Metro Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#MetroCádiz
+<http://aula.uoc.edu/tourism#MetroCádiz> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Transport> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                         rdfs:comment "Transport " ;
+                                         rdfs:label "Metro Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#MetroMadrid
+<http://aula.uoc.edu/tourism#MetroMadrid> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Metro Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#MetroMálaga
+<http://aula.uoc.edu/tourism#MetroMálaga> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Metro Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#MetroPamplona
+<http://aula.uoc.edu/tourism#MetroPamplona> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Transport> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                            rdfs:comment "Transport " ;
+                                            rdfs:label "Metro Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#MetroSanSebastián
+<http://aula.uoc.edu/tourism#MetroSanSebastián> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Transport> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                rdfs:comment "Transport " ;
+                                                rdfs:label "Metro San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#MetroSevilla
+<http://aula.uoc.edu/tourism#MetroSevilla> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Transport> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                           rdfs:comment "Transport " ;
+                                           rdfs:label "Metro Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#MetroToledo
+<http://aula.uoc.edu/tourism#MetroToledo> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Metro Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#MetroZaragoza
+<http://aula.uoc.edu/tourism#MetroZaragoza> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Transport> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                            rdfs:comment "Transport " ;
+                                            rdfs:label "Metro Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#MoviBarcelona
+<http://aula.uoc.edu/tourism#MoviBarcelona> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Transport> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                            rdfs:comment "Transport " ;
+                                            rdfs:label "Movi Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#MoviBilbao
+<http://aula.uoc.edu/tourism#MoviBilbao> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Transport> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                         rdfs:comment "Transport " ;
+                                         rdfs:label "Movi Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#MoviCádiz
+<http://aula.uoc.edu/tourism#MoviCádiz> rdf:type owl:NamedIndividual ,
+                                                 <http://aula.uoc.edu/tourism#Transport> ;
+                                        <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                        rdfs:comment "Transport " ;
+                                        rdfs:label "Movi Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#MoviMadrid
+<http://aula.uoc.edu/tourism#MoviMadrid> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Transport> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                         rdfs:comment "Transport " ;
+                                         rdfs:label "Movi Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#MoviMálaga
+<http://aula.uoc.edu/tourism#MoviMálaga> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Transport> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                         rdfs:comment "Transport " ;
+                                         rdfs:label "Movi Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#MoviPamplona
+<http://aula.uoc.edu/tourism#MoviPamplona> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Transport> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                           rdfs:comment "Transport " ;
+                                           rdfs:label "Movi Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#MoviSanSebastián
+<http://aula.uoc.edu/tourism#MoviSanSebastián> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Transport> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                               rdfs:comment "Transport " ;
+                                               rdfs:label "Movi San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#MoviSevilla
+<http://aula.uoc.edu/tourism#MoviSevilla> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Movi Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#MoviToledo
+<http://aula.uoc.edu/tourism#MoviToledo> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Transport> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                         rdfs:comment "Transport " ;
+                                         rdfs:label "Movi Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#MoviValencia
+<http://aula.uoc.edu/tourism#MoviValencia> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Transport> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                           rdfs:comment "Transport " ;
+                                           rdfs:label "Movi Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#MuseoBarcelona
+<http://aula.uoc.edu/tourism#MuseoBarcelona> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "3.8"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Museo Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#MuseoBilbao
+<http://aula.uoc.edu/tourism#MuseoBilbao> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Attraction> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                          <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                          rdfs:comment "Attraction " ;
+                                          rdfs:label "Museo Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#MuseoCádiz
+<http://aula.uoc.edu/tourism#MuseoCádiz> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Attraction> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                         <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                         rdfs:comment "Attraction " ;
+                                         rdfs:label "Museo Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#MuseoMadrid
+<http://aula.uoc.edu/tourism#MuseoMadrid> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Attraction> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                          <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                          rdfs:comment "Attraction " ;
+                                          rdfs:label "Museo Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#MuseoMálaga
+<http://aula.uoc.edu/tourism#MuseoMálaga> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Attraction> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                          <http://aula.uoc.edu/tourism#hasRating> "4.3"^^xsd:float ;
+                                          rdfs:comment "Attraction " ;
+                                          rdfs:label "Museo Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#MuseoPamplona
+<http://aula.uoc.edu/tourism#MuseoPamplona> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Attraction> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                            <http://aula.uoc.edu/tourism#hasRating> "5.0"^^xsd:float ;
+                                            rdfs:comment "Attraction " ;
+                                            rdfs:label "Museo Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#MuseoSanSebastián
+<http://aula.uoc.edu/tourism#MuseoSanSebastián> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Attraction> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                                rdfs:comment "Attraction " ;
+                                                rdfs:label "Museo San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#MuseoSevilla
+<http://aula.uoc.edu/tourism#MuseoSevilla> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Attraction> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                           <http://aula.uoc.edu/tourism#hasRating> "4.0"^^xsd:float ;
+                                           rdfs:comment "Attraction " ;
+                                           rdfs:label "Museo Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#MuseoToledo
+<http://aula.uoc.edu/tourism#MuseoToledo> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Attraction> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                          <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                          rdfs:comment "Attraction " ;
+                                          rdfs:label "Museo Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#MuseoZaragoza
+<http://aula.uoc.edu/tourism#MuseoZaragoza> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Attraction> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                            <http://aula.uoc.edu/tourism#hasRating> "4.1"^^xsd:float ;
+                                            rdfs:comment "Attraction " ;
+                                            rdfs:label "Museo Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#Málaga
+<http://aula.uoc.edu/tourism#Málaga> rdf:type owl:NamedIndividual ,
+                                              <http://aula.uoc.edu/tourism#City> ;
+                                     rdfs:comment "City " ;
+                                     rdfs:label "Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#PalacioBarcelona
+<http://aula.uoc.edu/tourism#PalacioBarcelona> rdf:type owl:NamedIndividual ,
+                                                        <http://aula.uoc.edu/tourism#Attraction> ;
+                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                               <http://aula.uoc.edu/tourism#hasRating> "4.3"^^xsd:float ;
+                                               rdfs:comment "Attraction " ;
+                                               rdfs:label "Palacio Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#PalacioBilbao
+<http://aula.uoc.edu/tourism#PalacioBilbao> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Attraction> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                            <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                            rdfs:comment "Attraction " ;
+                                            rdfs:label "Palacio Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#PalacioCádiz
+<http://aula.uoc.edu/tourism#PalacioCádiz> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Attraction> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                           <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                           rdfs:comment "Attraction " ;
+                                           rdfs:label "Palacio Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#PalacioMadrid
+<http://aula.uoc.edu/tourism#PalacioMadrid> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Attraction> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                            <http://aula.uoc.edu/tourism#hasRating> "3.9"^^xsd:float ;
+                                            rdfs:comment "Attraction " ;
+                                            rdfs:label "Palacio Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#PalacioMálaga
+<http://aula.uoc.edu/tourism#PalacioMálaga> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Attraction> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                            <http://aula.uoc.edu/tourism#hasRating> "3.9"^^xsd:float ;
+                                            rdfs:comment "Attraction " ;
+                                            rdfs:label "Palacio Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#PalacioPamplona
+<http://aula.uoc.edu/tourism#PalacioPamplona> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Attraction> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                              <http://aula.uoc.edu/tourism#hasRating> "4.3"^^xsd:float ;
+                                              rdfs:comment "Attraction " ;
+                                              rdfs:label "Palacio Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#PalacioToledo
+<http://aula.uoc.edu/tourism#PalacioToledo> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Attraction> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                            <http://aula.uoc.edu/tourism#hasRating> "3.6"^^xsd:float ;
+                                            rdfs:comment "Attraction " ;
+                                            rdfs:label "Palacio Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#PalacioValencia
+<http://aula.uoc.edu/tourism#PalacioValencia> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Attraction> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                              <http://aula.uoc.edu/tourism#hasRating> "3.8"^^xsd:float ;
+                                              rdfs:comment "Attraction " ;
+                                              rdfs:label "Palacio Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#PalacioZaragoza
+<http://aula.uoc.edu/tourism#PalacioZaragoza> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Attraction> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                              <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                              rdfs:comment "Attraction " ;
+                                              rdfs:label "Palacio Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#Pamplona
+<http://aula.uoc.edu/tourism#Pamplona> rdf:type owl:NamedIndividual ,
+                                                <http://aula.uoc.edu/tourism#City> ;
+                                       rdfs:comment "City " ;
+                                       rdfs:label "Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#ParqueBarcelona
+<http://aula.uoc.edu/tourism#ParqueBarcelona> rdf:type owl:NamedIndividual ,
+                                                       <http://aula.uoc.edu/tourism#Attraction> ;
+                                              <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                              <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                              rdfs:comment "Attraction " ;
+                                              rdfs:label "Parque Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#ParqueBilbao
+<http://aula.uoc.edu/tourism#ParqueBilbao> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Attraction> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                           <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                           rdfs:comment "Attraction " ;
+                                           rdfs:label "Parque Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#ParqueCádiz
+<http://aula.uoc.edu/tourism#ParqueCádiz> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Attraction> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                          <http://aula.uoc.edu/tourism#hasRating> "4.1"^^xsd:float ;
+                                          rdfs:comment "Attraction " ;
+                                          rdfs:label "Parque Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#ParqueMadrid
+<http://aula.uoc.edu/tourism#ParqueMadrid> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Attraction> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                           <http://aula.uoc.edu/tourism#hasRating> "4.3"^^xsd:float ;
+                                           rdfs:comment "Attraction " ;
+                                           rdfs:label "Parque Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#ParqueMálaga
+<http://aula.uoc.edu/tourism#ParqueMálaga> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Attraction> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                           <http://aula.uoc.edu/tourism#hasRating> "4.0"^^xsd:float ;
+                                           rdfs:comment "Attraction " ;
+                                           rdfs:label "Parque Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#ParquePamplona
+<http://aula.uoc.edu/tourism#ParquePamplona> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.1"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Parque Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#ParqueSanSebastián
+<http://aula.uoc.edu/tourism#ParqueSanSebastián> rdf:type owl:NamedIndividual ,
+                                                          <http://aula.uoc.edu/tourism#Attraction> ;
+                                                 <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                 <http://aula.uoc.edu/tourism#hasRating> "3.9"^^xsd:float ;
+                                                 rdfs:comment "Attraction " ;
+                                                 rdfs:label "Parque San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#ParqueSevilla
+<http://aula.uoc.edu/tourism#ParqueSevilla> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Attraction> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                            <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                            rdfs:comment "Attraction " ;
+                                            rdfs:label "Parque Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#ParqueToledo
+<http://aula.uoc.edu/tourism#ParqueToledo> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Attraction> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                           <http://aula.uoc.edu/tourism#hasRating> "4.8"^^xsd:float ;
+                                           rdfs:comment "Attraction " ;
+                                           rdfs:label "Parque Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#ParqueValencia
+<http://aula.uoc.edu/tourism#ParqueValencia> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Parque Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#ParqueZaragoza
+<http://aula.uoc.edu/tourism#ParqueZaragoza> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Attraction> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                             <http://aula.uoc.edu/tourism#hasRating> "4.5"^^xsd:float ;
+                                             rdfs:comment "Attraction " ;
+                                             rdfs:label "Parque Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona> rdf:type owl:NamedIndividual ,
+                                                                   <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                          <http://aula.uoc.edu/tourism#hasRating> "4.5"^^xsd:float ;
+                                                          rdfs:comment "Restaurant " ;
+                                                          rdfs:label "Restaurante Delicia Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao> rdf:type owl:NamedIndividual ,
+                                                                <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                       <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                                       <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                                       rdfs:comment "Restaurant " ;
+                                                       rdfs:label "Restaurante Delicia Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz
+<http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz> rdf:type owl:NamedIndividual ,
+                                                               <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                      <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                                      <http://aula.uoc.edu/tourism#hasRating> "4.7"^^xsd:float ;
+                                                      rdfs:comment "Restaurant " ;
+                                                      rdfs:label "Restaurante Delicia Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid> rdf:type owl:NamedIndividual ,
+                                                                <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                       <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                                       <http://aula.uoc.edu/tourism#hasRating> "4.7"^^xsd:float ;
+                                                       rdfs:comment "Restaurant " ;
+                                                       rdfs:label "Restaurante Delicia Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga> rdf:type owl:NamedIndividual ,
+                                                                <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                       <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                                       <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                                       rdfs:comment "Restaurant " ;
+                                                       rdfs:label "Restaurante Delicia Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona
+<http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona> rdf:type owl:NamedIndividual ,
+                                                                  <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                                         <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                                         rdfs:comment "Restaurant " ;
+                                                         rdfs:label "Restaurante Delicia Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián> rdf:type owl:NamedIndividual ,
+                                                                      <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                             <http://aula.uoc.edu/tourism#hasRating> "3.6"^^xsd:float ;
+                                                             rdfs:comment "Restaurant " ;
+                                                             rdfs:label "Restaurante Delicia San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla> rdf:type owl:NamedIndividual ,
+                                                                 <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                        <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                                        <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                                        rdfs:comment "Restaurant " ;
+                                                        rdfs:label "Restaurante Delicia Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteDeliciaValencia
+<http://aula.uoc.edu/tourism#RestauranteDeliciaValencia> rdf:type owl:NamedIndividual ,
+                                                                  <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                                         <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                                         rdfs:comment "Restaurant " ;
+                                                         rdfs:label "Restaurante Delicia Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza
+<http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza> rdf:type owl:NamedIndividual ,
+                                                                  <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                                         <http://aula.uoc.edu/tourism#hasRating> "3.9"^^xsd:float ;
+                                                         rdfs:comment "Restaurant " ;
+                                                         rdfs:label "Restaurante Delicia Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona
+<http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona> rdf:type owl:NamedIndividual ,
+                                                                  <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                         <http://aula.uoc.edu/tourism#hasRating> "3.8"^^xsd:float ;
+                                                         rdfs:comment "Restaurant " ;
+                                                         rdfs:label "Restaurante Fusión Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteFusiónBilbao
+<http://aula.uoc.edu/tourism#RestauranteFusiónBilbao> rdf:type owl:NamedIndividual ,
+                                                               <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                      <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                                      <http://aula.uoc.edu/tourism#hasRating> "5.0"^^xsd:float ;
+                                                      rdfs:comment "Restaurant " ;
+                                                      rdfs:label "Restaurante Fusión Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteFusiónCádiz
+<http://aula.uoc.edu/tourism#RestauranteFusiónCádiz> rdf:type owl:NamedIndividual ,
+                                                              <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                     <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                                     <http://aula.uoc.edu/tourism#hasRating> "4.8"^^xsd:float ;
+                                                     rdfs:comment "Restaurant " ;
+                                                     rdfs:label "Restaurante Fusión Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteFusiónMadrid
+<http://aula.uoc.edu/tourism#RestauranteFusiónMadrid> rdf:type owl:NamedIndividual ,
+                                                               <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                      <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                                      <http://aula.uoc.edu/tourism#hasRating> "4.8"^^xsd:float ;
+                                                      rdfs:comment "Restaurant " ;
+                                                      rdfs:label "Restaurante Fusión Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteFusiónMálaga
+<http://aula.uoc.edu/tourism#RestauranteFusiónMálaga> rdf:type owl:NamedIndividual ,
+                                                               <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                      <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                                      <http://aula.uoc.edu/tourism#hasRating> "4.7"^^xsd:float ;
+                                                      rdfs:comment "Restaurant " ;
+                                                      rdfs:label "Restaurante Fusión Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteFusiónPamplona
+<http://aula.uoc.edu/tourism#RestauranteFusiónPamplona> rdf:type owl:NamedIndividual ,
+                                                                 <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                        <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                                        <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                                        rdfs:comment "Restaurant " ;
+                                                        rdfs:label "Restaurante Fusión Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteFusiónSevilla
+<http://aula.uoc.edu/tourism#RestauranteFusiónSevilla> rdf:type owl:NamedIndividual ,
+                                                                <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                       <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                                       <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                                       rdfs:comment "Restaurant " ;
+                                                       rdfs:label "Restaurante Fusión Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteFusiónToledo
+<http://aula.uoc.edu/tourism#RestauranteFusiónToledo> rdf:type owl:NamedIndividual ,
+                                                               <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                      <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                                      <http://aula.uoc.edu/tourism#hasRating> "4.0"^^xsd:float ;
+                                                      rdfs:comment "Restaurant " ;
+                                                      rdfs:label "Restaurante Fusión Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteFusiónValencia
+<http://aula.uoc.edu/tourism#RestauranteFusiónValencia> rdf:type owl:NamedIndividual ,
+                                                                 <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                        <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                                        <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                                        rdfs:comment "Restaurant " ;
+                                                        rdfs:label "Restaurante Fusión Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza
+<http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza> rdf:type owl:NamedIndividual ,
+                                                                 <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                        <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                                        <http://aula.uoc.edu/tourism#hasRating> "3.9"^^xsd:float ;
+                                                        rdfs:comment "Restaurant " ;
+                                                        rdfs:label "Restaurante Fusión Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona
+<http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona> rdf:type owl:NamedIndividual ,
+                                                                   <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                                          <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                                          rdfs:comment "Restaurant " ;
+                                                          rdfs:label "Restaurante Gourmet Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteGourmetCádiz
+<http://aula.uoc.edu/tourism#RestauranteGourmetCádiz> rdf:type owl:NamedIndividual ,
+                                                               <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                      <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                                      <http://aula.uoc.edu/tourism#hasRating> "4.3"^^xsd:float ;
+                                                      rdfs:comment "Restaurant " ;
+                                                      rdfs:label "Restaurante Gourmet Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteGourmetMadrid
+<http://aula.uoc.edu/tourism#RestauranteGourmetMadrid> rdf:type owl:NamedIndividual ,
+                                                                <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                       <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                                       <http://aula.uoc.edu/tourism#hasRating> "3.8"^^xsd:float ;
+                                                       rdfs:comment "Restaurant " ;
+                                                       rdfs:label "Restaurante Gourmet Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteGourmetMálaga
+<http://aula.uoc.edu/tourism#RestauranteGourmetMálaga> rdf:type owl:NamedIndividual ,
+                                                                <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                       <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                                       <http://aula.uoc.edu/tourism#hasRating> "4.7"^^xsd:float ;
+                                                       rdfs:comment "Restaurant " ;
+                                                       rdfs:label "Restaurante Gourmet Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteGourmetPamplona
+<http://aula.uoc.edu/tourism#RestauranteGourmetPamplona> rdf:type owl:NamedIndividual ,
+                                                                  <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                                         <http://aula.uoc.edu/tourism#hasRating> "5.0"^^xsd:float ;
+                                                         rdfs:comment "Restaurant " ;
+                                                         rdfs:label "Restaurante Gourmet Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián
+<http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián> rdf:type owl:NamedIndividual ,
+                                                                      <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                             <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                                             rdfs:comment "Restaurant " ;
+                                                             rdfs:label "Restaurante Gourmet San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteGourmetSevilla
+<http://aula.uoc.edu/tourism#RestauranteGourmetSevilla> rdf:type owl:NamedIndividual ,
+                                                                 <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                        <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                                        <http://aula.uoc.edu/tourism#hasRating> "3.8"^^xsd:float ;
+                                                        rdfs:comment "Restaurant " ;
+                                                        rdfs:label "Restaurante Gourmet Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteGourmetToledo
+<http://aula.uoc.edu/tourism#RestauranteGourmetToledo> rdf:type owl:NamedIndividual ,
+                                                                <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                       <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                                       <http://aula.uoc.edu/tourism#hasRating> "4.5"^^xsd:float ;
+                                                       rdfs:comment "Restaurant " ;
+                                                       rdfs:label "Restaurante Gourmet Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteGourmetValencia
+<http://aula.uoc.edu/tourism#RestauranteGourmetValencia> rdf:type owl:NamedIndividual ,
+                                                                  <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                                         <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                                         rdfs:comment "Restaurant " ;
+                                                         rdfs:label "Restaurante Gourmet Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza
+<http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza> rdf:type owl:NamedIndividual ,
+                                                                  <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                                         <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                                         rdfs:comment "Restaurant " ;
+                                                         rdfs:label "Restaurante Gourmet Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteSaborCádiz
+<http://aula.uoc.edu/tourism#RestauranteSaborCádiz> rdf:type owl:NamedIndividual ,
+                                                             <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                    <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                                    <http://aula.uoc.edu/tourism#hasRating> "3.6"^^xsd:float ;
+                                                    rdfs:comment "Restaurant " ;
+                                                    rdfs:label "Restaurante Sabor Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteSaborMálaga
+<http://aula.uoc.edu/tourism#RestauranteSaborMálaga> rdf:type owl:NamedIndividual ,
+                                                              <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                     <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                                     <http://aula.uoc.edu/tourism#hasRating> "4.7"^^xsd:float ;
+                                                     rdfs:comment "Restaurant " ;
+                                                     rdfs:label "Restaurante Sabor Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián
+<http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián> rdf:type owl:NamedIndividual ,
+                                                                    <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                           <http://aula.uoc.edu/tourism#hasRating> "4.9"^^xsd:float ;
+                                                           rdfs:comment "Restaurant " ;
+                                                           rdfs:label "Restaurante Sabor San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteSaborSevilla
+<http://aula.uoc.edu/tourism#RestauranteSaborSevilla> rdf:type owl:NamedIndividual ,
+                                                               <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                      <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                                      <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                                      rdfs:comment "Restaurant " ;
+                                                      rdfs:label "Restaurante Sabor Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteSaborValencia
+<http://aula.uoc.edu/tourism#RestauranteSaborValencia> rdf:type owl:NamedIndividual ,
+                                                                <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                       <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                                       <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                                       rdfs:comment "Restaurant " ;
+                                                       rdfs:label "Restaurante Sabor Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteSaborZaragoza
+<http://aula.uoc.edu/tourism#RestauranteSaborZaragoza> rdf:type owl:NamedIndividual ,
+                                                                <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                       <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                                       <http://aula.uoc.edu/tourism#hasRating> "4.6"^^xsd:float ;
+                                                       rdfs:comment "Restaurant " ;
+                                                       rdfs:label "Restaurante Sabor Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz
+<http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz> rdf:type owl:NamedIndividual ,
+                                                                 <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                        <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                                        <http://aula.uoc.edu/tourism#hasRating> "4.0"^^xsd:float ;
+                                                        rdfs:comment "Restaurant " ;
+                                                        rdfs:label "Restaurante Tradición Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid> rdf:type owl:NamedIndividual ,
+                                                                  <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                                         <http://aula.uoc.edu/tourism#hasRating> "4.2"^^xsd:float ;
+                                                         rdfs:comment "Restaurant " ;
+                                                         rdfs:label "Restaurante Tradición Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga> rdf:type owl:NamedIndividual ,
+                                                                  <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                                         <http://aula.uoc.edu/tourism#hasRating> "4.1"^^xsd:float ;
+                                                         rdfs:comment "Restaurant " ;
+                                                         rdfs:label "Restaurante Tradición Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián> rdf:type owl:NamedIndividual ,
+                                                                        <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                               <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                               <http://aula.uoc.edu/tourism#hasRating> "5.0"^^xsd:float ;
+                                                               rdfs:comment "Restaurant " ;
+                                                               rdfs:label "Restaurante Tradición San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla> rdf:type owl:NamedIndividual ,
+                                                                   <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                                          <http://aula.uoc.edu/tourism#hasRating> "4.3"^^xsd:float ;
+                                                          rdfs:comment "Restaurant " ;
+                                                          rdfs:label "Restaurante Tradición Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteTradiciónToledo
+<http://aula.uoc.edu/tourism#RestauranteTradiciónToledo> rdf:type owl:NamedIndividual ,
+                                                                  <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                                         <http://aula.uoc.edu/tourism#hasRating> "3.7"^^xsd:float ;
+                                                         rdfs:comment "Restaurant " ;
+                                                         rdfs:label "Restaurante Tradición Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza
+<http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza> rdf:type owl:NamedIndividual ,
+                                                                    <http://aula.uoc.edu/tourism#Restaurant> ;
+                                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                                           <http://aula.uoc.edu/tourism#hasRating> "4.4"^^xsd:float ;
+                                                           rdfs:comment "Restaurant " ;
+                                                           rdfs:label "Restaurante Tradición Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#SanSebastián
+<http://aula.uoc.edu/tourism#SanSebastián> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#City> ;
+                                           rdfs:comment "City " ;
+                                           rdfs:label "San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#Sevilla
+<http://aula.uoc.edu/tourism#Sevilla> rdf:type owl:NamedIndividual ,
+                                               <http://aula.uoc.edu/tourism#City> ;
+                                      rdfs:comment "City " ;
+                                      rdfs:label "Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#Toledo
+<http://aula.uoc.edu/tourism#Toledo> rdf:type owl:NamedIndividual ,
+                                              <http://aula.uoc.edu/tourism#City> ;
+                                     rdfs:comment "City " ;
+                                     rdfs:label "Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#TransBilbao
+<http://aula.uoc.edu/tourism#TransBilbao> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Trans Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#TransCádiz
+<http://aula.uoc.edu/tourism#TransCádiz> rdf:type owl:NamedIndividual ,
+                                                  <http://aula.uoc.edu/tourism#Transport> ;
+                                         <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> ;
+                                         rdfs:comment "Transport " ;
+                                         rdfs:label "Trans Cádiz" .
+
+
+###  http://aula.uoc.edu/tourism#TransMadrid
+<http://aula.uoc.edu/tourism#TransMadrid> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Trans Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#TransMálaga
+<http://aula.uoc.edu/tourism#TransMálaga> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Trans Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#TransPamplona
+<http://aula.uoc.edu/tourism#TransPamplona> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Transport> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                            rdfs:comment "Transport " ;
+                                            rdfs:label "Trans Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#TransSanSebastián
+<http://aula.uoc.edu/tourism#TransSanSebastián> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Transport> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                rdfs:comment "Transport " ;
+                                                rdfs:label "Trans San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#TransSevilla
+<http://aula.uoc.edu/tourism#TransSevilla> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Transport> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                           rdfs:comment "Transport " ;
+                                           rdfs:label "Trans Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#TransToledo
+<http://aula.uoc.edu/tourism#TransToledo> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Trans Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#TransValencia
+<http://aula.uoc.edu/tourism#TransValencia> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Transport> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                            rdfs:comment "Transport " ;
+                                            rdfs:label "Trans Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#TransZaragoza
+<http://aula.uoc.edu/tourism#TransZaragoza> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Transport> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                            rdfs:comment "Transport " ;
+                                            rdfs:label "Trans Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#UrbanBarcelona
+<http://aula.uoc.edu/tourism#UrbanBarcelona> rdf:type owl:NamedIndividual ,
+                                                      <http://aula.uoc.edu/tourism#Transport> ;
+                                             <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> ;
+                                             rdfs:comment "Transport " ;
+                                             rdfs:label "Urban Barcelona" .
+
+
+###  http://aula.uoc.edu/tourism#UrbanBilbao
+<http://aula.uoc.edu/tourism#UrbanBilbao> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Urban Bilbao" .
+
+
+###  http://aula.uoc.edu/tourism#UrbanMadrid
+<http://aula.uoc.edu/tourism#UrbanMadrid> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Urban Madrid" .
+
+
+###  http://aula.uoc.edu/tourism#UrbanMálaga
+<http://aula.uoc.edu/tourism#UrbanMálaga> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Urban Málaga" .
+
+
+###  http://aula.uoc.edu/tourism#UrbanPamplona
+<http://aula.uoc.edu/tourism#UrbanPamplona> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Transport> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> ;
+                                            rdfs:comment "Transport " ;
+                                            rdfs:label "Urban Pamplona" .
+
+
+###  http://aula.uoc.edu/tourism#UrbanSanSebastián
+<http://aula.uoc.edu/tourism#UrbanSanSebastián> rdf:type owl:NamedIndividual ,
+                                                         <http://aula.uoc.edu/tourism#Transport> ;
+                                                <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> ;
+                                                rdfs:comment "Transport " ;
+                                                rdfs:label "Urban San Sebastián" .
+
+
+###  http://aula.uoc.edu/tourism#UrbanSevilla
+<http://aula.uoc.edu/tourism#UrbanSevilla> rdf:type owl:NamedIndividual ,
+                                                    <http://aula.uoc.edu/tourism#Transport> ;
+                                           <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> ;
+                                           rdfs:comment "Transport " ;
+                                           rdfs:label "Urban Sevilla" .
+
+
+###  http://aula.uoc.edu/tourism#UrbanToledo
+<http://aula.uoc.edu/tourism#UrbanToledo> rdf:type owl:NamedIndividual ,
+                                                   <http://aula.uoc.edu/tourism#Transport> ;
+                                          <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> ;
+                                          rdfs:comment "Transport " ;
+                                          rdfs:label "Urban Toledo" .
+
+
+###  http://aula.uoc.edu/tourism#UrbanValencia
+<http://aula.uoc.edu/tourism#UrbanValencia> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Transport> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> ;
+                                            rdfs:comment "Transport " ;
+                                            rdfs:label "Urban Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#UrbanZaragoza
+<http://aula.uoc.edu/tourism#UrbanZaragoza> rdf:type owl:NamedIndividual ,
+                                                     <http://aula.uoc.edu/tourism#Transport> ;
+                                            <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> ;
+                                            rdfs:comment "Transport " ;
+                                            rdfs:label "Urban Zaragoza" .
+
+
+###  http://aula.uoc.edu/tourism#Valencia
+<http://aula.uoc.edu/tourism#Valencia> rdf:type owl:NamedIndividual ,
+                                                <http://aula.uoc.edu/tourism#City> ;
+                                       rdfs:comment "City " ;
+                                       rdfs:label "Valencia" .
+
+
+###  http://aula.uoc.edu/tourism#Zaragoza
+<http://aula.uoc.edu/tourism#Zaragoza> rdf:type owl:NamedIndividual ,
+                                                <http://aula.uoc.edu/tourism#City> ;
+                                       rdfs:comment "City " ;
+                                       rdfs:label "Zaragoza" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

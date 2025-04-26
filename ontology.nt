@@ -1,0 +1,1985 @@
+<http://rafaelromero.org/ontologia/turismo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://rafaelromero.org/ontologia/turismo> <http://purl.org/dc/elements/1.1/creator> "Rafael Romero Montilla" .
+<http://rafaelromero.org/ontologia/turismo> <http://purl.org/dc/elements/1.1/date> "2025-04-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://rafaelromero.org/ontologia/turismo> <http://purl.org/dc/elements/1.1/description> "Ontología que modela ciudades, eventos turísticos, alojamientos, atracciones culturales, restaurantes y recomendaciones urbanas personalizadas."@es .
+<http://rafaelromero.org/ontologia/turismo> <http://purl.org/dc/elements/1.1/rights> "Licencia Creative Commons Attribution 4.0 (CC BY 4.0)" .
+<http://rafaelromero.org/ontologia/turismo> <http://purl.org/dc/elements/1.1/title> "Ontología de Turismo Inteligente"@es .
+<http://rafaelromero.org/ontologia/turismo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "turismo" .
+<http://rafaelromero.org/ontologia/turismo> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://rafaelromero.org/ontologia/turismo#" .
+<http://rafaelromero.org/ontologia/turismo> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0" .
+<http://rafaelromero.org/ontologia/turismo> <http://xmlns.com/foaf/0.1/homepage> <https://example.org> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://aula.uoc.edu/tourism#locatedIn
+<http://aula.uoc.edu/tourism#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://aula.uoc.edu/tourism#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://aula.uoc.edu/tourism#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://aula.uoc.edu/tourism#hasPrice
+<http://aula.uoc.edu/tourism#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://aula.uoc.edu/tourism#hasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#hasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://aula.uoc.edu/tourism#hasRating
+<http://aula.uoc.edu/tourism#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://aula.uoc.edu/tourism#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://aula.uoc.edu/tourism#Attraction
+<http://aula.uoc.edu/tourism#Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://aula.uoc.edu/tourism#City
+# 
+# http://aula.uoc.edu/tourism#Event
+<http://aula.uoc.edu/tourism#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://aula.uoc.edu/tourism#Hotel
+# 
+# http://aula.uoc.edu/tourism#Restaurant
+<http://aula.uoc.edu/tourism#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://aula.uoc.edu/tourism#Transport
+<http://aula.uoc.edu/tourism#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://aula.uoc.edu/tourism#Barcelona
+<http://aula.uoc.edu/tourism#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#Bilbao
+<http://aula.uoc.edu/tourism#Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#Bilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#Bilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#CarnavalBarcelona
+<http://aula.uoc.edu/tourism#CarnavalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CarnavalBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#CarnavalBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CarnavalBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#CarnavalBilbao
+<http://aula.uoc.edu/tourism#CarnavalBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CarnavalBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#CarnavalBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CarnavalBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#CarnavalCádiz
+<http://aula.uoc.edu/tourism#CarnavalCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CarnavalCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#Cádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CarnavalCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#CarnavalMadrid
+<http://aula.uoc.edu/tourism#CarnavalMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CarnavalMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CarnavalMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval Madrid" .
+# 
+# http://aula.uoc.edu/tourism#CarnavalMálaga
+<http://aula.uoc.edu/tourism#CarnavalMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CarnavalMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#Málaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CarnavalMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval Málaga" .
+# 
+# http://aula.uoc.edu/tourism#CarnavalSanSebastián
+<http://aula.uoc.edu/tourism#CarnavalSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CarnavalSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#SanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CarnavalSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#CarnavalSevilla
+<http://aula.uoc.edu/tourism#CarnavalSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CarnavalSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#Sevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CarnavalSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#CarnavalToledo
+<http://aula.uoc.edu/tourism#CarnavalToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CarnavalToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CarnavalToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval Toledo" .
+# 
+# http://aula.uoc.edu/tourism#CarnavalValencia
+<http://aula.uoc.edu/tourism#CarnavalValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CarnavalValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CarnavalValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval Valencia" .
+# 
+# http://aula.uoc.edu/tourism#CarnavalZaragoza
+<http://aula.uoc.edu/tourism#CarnavalZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CarnavalZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#Zaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CarnavalZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CarnavalZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#CastilloBarcelona
+<http://aula.uoc.edu/tourism#CastilloBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#CastilloBarcelona> <http://aula.uoc.edu/tourism#hasRating> "4.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#CastilloBilbao
+<http://aula.uoc.edu/tourism#CastilloBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#CastilloBilbao> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#CastilloCádiz
+<http://aula.uoc.edu/tourism#CastilloCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#CastilloCádiz> <http://aula.uoc.edu/tourism#hasRating> "3.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#CastilloMadrid
+<http://aula.uoc.edu/tourism#CastilloMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#CastilloMadrid> <http://aula.uoc.edu/tourism#hasRating> "4.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo Madrid" .
+# 
+# http://aula.uoc.edu/tourism#CastilloMálaga
+<http://aula.uoc.edu/tourism#CastilloMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#CastilloMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo Málaga" .
+# 
+# http://aula.uoc.edu/tourism#CastilloPamplona
+<http://aula.uoc.edu/tourism#CastilloPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#Pamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloPamplona> <http://aula.uoc.edu/tourism#hasRating> "3.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#CastilloSanSebastián
+<http://aula.uoc.edu/tourism#CastilloSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#CastilloSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "4.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#CastilloSevilla
+<http://aula.uoc.edu/tourism#CastilloSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#CastilloSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#CastilloToledo
+<http://aula.uoc.edu/tourism#CastilloToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#CastilloToledo> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo Toledo" .
+# 
+# http://aula.uoc.edu/tourism#CastilloValencia
+<http://aula.uoc.edu/tourism#CastilloValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#CastilloValencia> <http://aula.uoc.edu/tourism#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo Valencia" .
+# 
+# http://aula.uoc.edu/tourism#CastilloZaragoza
+<http://aula.uoc.edu/tourism#CastilloZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CastilloZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CastilloZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#CastilloZaragoza> <http://aula.uoc.edu/tourism#hasRating> "3.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CastilloZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CastilloZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#CatedralBarcelona
+<http://aula.uoc.edu/tourism#CatedralBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CatedralBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CatedralBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#CatedralBarcelona> <http://aula.uoc.edu/tourism#hasRating> "4.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CatedralBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CatedralBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Catedral Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#CatedralBilbao
+<http://aula.uoc.edu/tourism#CatedralBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CatedralBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CatedralBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#CatedralBilbao> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CatedralBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CatedralBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Catedral Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#CatedralCádiz
+<http://aula.uoc.edu/tourism#CatedralCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CatedralCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CatedralCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#CatedralCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CatedralCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CatedralCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Catedral Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#CatedralMadrid
+<http://aula.uoc.edu/tourism#CatedralMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CatedralMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CatedralMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#CatedralMadrid> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CatedralMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CatedralMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Catedral Madrid" .
+# 
+# http://aula.uoc.edu/tourism#CatedralMálaga
+<http://aula.uoc.edu/tourism#CatedralMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CatedralMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CatedralMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#CatedralMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CatedralMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CatedralMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Catedral Málaga" .
+# 
+# http://aula.uoc.edu/tourism#CatedralPamplona
+<http://aula.uoc.edu/tourism#CatedralPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CatedralPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CatedralPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#CatedralPamplona> <http://aula.uoc.edu/tourism#hasRating> "4.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CatedralPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CatedralPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Catedral Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#CatedralSevilla
+<http://aula.uoc.edu/tourism#CatedralSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CatedralSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CatedralSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#CatedralSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CatedralSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CatedralSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Catedral Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#CatedralToledo
+<http://aula.uoc.edu/tourism#CatedralToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CatedralToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CatedralToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#CatedralToledo> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CatedralToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CatedralToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Catedral Toledo" .
+# 
+# http://aula.uoc.edu/tourism#CatedralValencia
+<http://aula.uoc.edu/tourism#CatedralValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CatedralValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CatedralValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#CatedralValencia> <http://aula.uoc.edu/tourism#hasRating> "4.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CatedralValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CatedralValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Catedral Valencia" .
+# 
+# http://aula.uoc.edu/tourism#CatedralZaragoza
+<http://aula.uoc.edu/tourism#CatedralZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CatedralZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#CatedralZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#CatedralZaragoza> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#CatedralZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#CatedralZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Catedral Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#CityBarcelona
+<http://aula.uoc.edu/tourism#CityBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CityBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#CityBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#CityBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#CityBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "City Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#CityBilbao
+<http://aula.uoc.edu/tourism#CityBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CityBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#CityBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#CityBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#CityBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "City Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#CityCádiz
+<http://aula.uoc.edu/tourism#CityCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CityCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#CityCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#CityCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#CityCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "City Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#CityMadrid
+<http://aula.uoc.edu/tourism#CityMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CityMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#CityMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#CityMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#CityMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "City Madrid" .
+# 
+# http://aula.uoc.edu/tourism#CityMálaga
+<http://aula.uoc.edu/tourism#CityMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CityMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#CityMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#CityMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#CityMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "City Málaga" .
+# 
+# http://aula.uoc.edu/tourism#CityPamplona
+<http://aula.uoc.edu/tourism#CityPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CityPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#CityPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#CityPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#CityPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "City Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#CitySevilla
+<http://aula.uoc.edu/tourism#CitySevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CitySevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#CitySevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#CitySevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#CitySevilla> <http://www.w3.org/2000/01/rdf-schema#label> "City Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#CityToledo
+<http://aula.uoc.edu/tourism#CityToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CityToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#CityToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#CityToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#CityToledo> <http://www.w3.org/2000/01/rdf-schema#label> "City Toledo" .
+# 
+# http://aula.uoc.edu/tourism#CityZaragoza
+<http://aula.uoc.edu/tourism#CityZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CityZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#CityZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#CityZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#CityZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "City Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#ConciertoCádiz
+<http://aula.uoc.edu/tourism#ConciertoCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ConciertoCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#ConciertoCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#ConciertoCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#ConciertoCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Concierto Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#ConciertoMálaga
+<http://aula.uoc.edu/tourism#ConciertoMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ConciertoMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#ConciertoMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#ConciertoMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#ConciertoMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Concierto Málaga" .
+# 
+# http://aula.uoc.edu/tourism#ConciertoPamplona
+<http://aula.uoc.edu/tourism#ConciertoPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ConciertoPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#ConciertoPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#ConciertoPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#ConciertoPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Concierto Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#ConciertoSanSebastián
+<http://aula.uoc.edu/tourism#ConciertoSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ConciertoSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#ConciertoSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#ConciertoSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#ConciertoSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Concierto San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#ConciertoSevilla
+<http://aula.uoc.edu/tourism#ConciertoSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ConciertoSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#ConciertoSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#ConciertoSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#ConciertoSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Concierto Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#ConciertoToledo
+<http://aula.uoc.edu/tourism#ConciertoToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ConciertoToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#ConciertoToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#ConciertoToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#ConciertoToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Concierto Toledo" .
+# 
+# http://aula.uoc.edu/tourism#ConciertoValencia
+<http://aula.uoc.edu/tourism#ConciertoValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ConciertoValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#ConciertoValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#ConciertoValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#ConciertoValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Concierto Valencia" .
+# 
+# http://aula.uoc.edu/tourism#ConciertoZaragoza
+<http://aula.uoc.edu/tourism#ConciertoZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ConciertoZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#ConciertoZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#ConciertoZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#ConciertoZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Concierto Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#CongresoBarcelona
+<http://aula.uoc.edu/tourism#CongresoBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CongresoBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CongresoBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#CongresoBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CongresoBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Congreso Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#CongresoBilbao
+<http://aula.uoc.edu/tourism#CongresoBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CongresoBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CongresoBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#CongresoBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CongresoBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Congreso Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#CongresoCádiz
+<http://aula.uoc.edu/tourism#CongresoCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CongresoCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CongresoCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#CongresoCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CongresoCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Congreso Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#CongresoSanSebastián
+<http://aula.uoc.edu/tourism#CongresoSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CongresoSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CongresoSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#CongresoSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CongresoSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Congreso San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#CongresoSevilla
+<http://aula.uoc.edu/tourism#CongresoSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CongresoSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CongresoSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#CongresoSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CongresoSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Congreso Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#CongresoToledo
+<http://aula.uoc.edu/tourism#CongresoToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CongresoToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CongresoToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#CongresoToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CongresoToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Congreso Toledo" .
+# 
+# http://aula.uoc.edu/tourism#CongresoValencia
+<http://aula.uoc.edu/tourism#CongresoValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CongresoValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CongresoValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#CongresoValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CongresoValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Congreso Valencia" .
+# 
+# http://aula.uoc.edu/tourism#CongresoZaragoza
+<http://aula.uoc.edu/tourism#CongresoZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#CongresoZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#CongresoZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#CongresoZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#CongresoZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Congreso Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#Cádiz
+<http://aula.uoc.edu/tourism#Cádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#Cádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#Cádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#FeriaBarcelona
+<http://aula.uoc.edu/tourism#FeriaBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FeriaBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FeriaBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#FeriaBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FeriaBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Feria Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#FeriaCádiz
+<http://aula.uoc.edu/tourism#FeriaCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FeriaCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FeriaCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#FeriaCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FeriaCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Feria Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#FeriaMadrid
+<http://aula.uoc.edu/tourism#FeriaMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FeriaMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FeriaMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#FeriaMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FeriaMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Feria Madrid" .
+# 
+# http://aula.uoc.edu/tourism#FeriaMálaga
+<http://aula.uoc.edu/tourism#FeriaMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FeriaMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FeriaMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#FeriaMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FeriaMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Feria Málaga" .
+# 
+# http://aula.uoc.edu/tourism#FeriaPamplona
+<http://aula.uoc.edu/tourism#FeriaPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FeriaPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FeriaPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#FeriaPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FeriaPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Feria Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#FeriaSevilla
+<http://aula.uoc.edu/tourism#FeriaSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FeriaSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FeriaSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#FeriaSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FeriaSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Feria Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#FeriaToledo
+<http://aula.uoc.edu/tourism#FeriaToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FeriaToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FeriaToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#FeriaToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FeriaToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Feria Toledo" .
+# 
+# http://aula.uoc.edu/tourism#FeriaZaragoza
+<http://aula.uoc.edu/tourism#FeriaZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FeriaZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FeriaZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#FeriaZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FeriaZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Feria Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#FestivalBarcelona
+<http://aula.uoc.edu/tourism#FestivalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#FestivalBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#FestivalBilbao
+<http://aula.uoc.edu/tourism#FestivalBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#FestivalBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#FestivalCádiz
+<http://aula.uoc.edu/tourism#FestivalCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#FestivalCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#FestivalMadrid
+<http://aula.uoc.edu/tourism#FestivalMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#FestivalMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Madrid" .
+# 
+# http://aula.uoc.edu/tourism#FestivalMálaga
+<http://aula.uoc.edu/tourism#FestivalMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#FestivalMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Málaga" .
+# 
+# http://aula.uoc.edu/tourism#FestivalPamplona
+<http://aula.uoc.edu/tourism#FestivalPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#FestivalPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#FestivalSanSebastián
+<http://aula.uoc.edu/tourism#FestivalSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#FestivalSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Festival San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#FestivalSevilla
+<http://aula.uoc.edu/tourism#FestivalSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#FestivalSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#FestivalToledo
+<http://aula.uoc.edu/tourism#FestivalToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#FestivalToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Toledo" .
+# 
+# http://aula.uoc.edu/tourism#FestivalValencia
+<http://aula.uoc.edu/tourism#FestivalValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#FestivalValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Valencia" .
+# 
+# http://aula.uoc.edu/tourism#FestivalZaragoza
+<http://aula.uoc.edu/tourism#FestivalZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#FestivalZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Event> .
+<http://aula.uoc.edu/tourism#FestivalZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#FestivalZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Event " .
+<http://aula.uoc.edu/tourism#FestivalZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#HotelDelMarBarcelona
+<http://aula.uoc.edu/tourism#HotelDelMarBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelDelMarBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelDelMarBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#HotelDelMarBarcelona> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelDelMarBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelDelMarBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Del Mar Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#HotelDelMarCádiz
+<http://aula.uoc.edu/tourism#HotelDelMarCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelDelMarCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelDelMarCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#HotelDelMarCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelDelMarCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelDelMarCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Del Mar Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#HotelDelMarMadrid
+<http://aula.uoc.edu/tourism#HotelDelMarMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelDelMarMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelDelMarMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#HotelDelMarMadrid> <http://aula.uoc.edu/tourism#hasRating> "3.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelDelMarMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelDelMarMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Del Mar Madrid" .
+# 
+# http://aula.uoc.edu/tourism#HotelDelMarMálaga
+<http://aula.uoc.edu/tourism#HotelDelMarMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelDelMarMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelDelMarMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#HotelDelMarMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelDelMarMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelDelMarMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Del Mar Málaga" .
+# 
+# http://aula.uoc.edu/tourism#HotelDelMarPamplona
+<http://aula.uoc.edu/tourism#HotelDelMarPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelDelMarPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelDelMarPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#HotelDelMarPamplona> <http://aula.uoc.edu/tourism#hasRating> "3.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelDelMarPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelDelMarPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Del Mar Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#HotelDelMarSanSebastián
+<http://aula.uoc.edu/tourism#HotelDelMarSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelDelMarSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelDelMarSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#HotelDelMarSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelDelMarSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelDelMarSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Del Mar San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#HotelDelMarSevilla
+<http://aula.uoc.edu/tourism#HotelDelMarSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelDelMarSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelDelMarSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#HotelDelMarSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelDelMarSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelDelMarSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Del Mar Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#HotelDelMarToledo
+<http://aula.uoc.edu/tourism#HotelDelMarToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelDelMarToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelDelMarToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#HotelDelMarToledo> <http://aula.uoc.edu/tourism#hasRating> "4.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelDelMarToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelDelMarToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Del Mar Toledo" .
+# 
+# http://aula.uoc.edu/tourism#HotelDelMarValencia
+<http://aula.uoc.edu/tourism#HotelDelMarValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelDelMarValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelDelMarValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#HotelDelMarValencia> <http://aula.uoc.edu/tourism#hasRating> "3.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelDelMarValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelDelMarValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Del Mar Valencia" .
+# 
+# http://aula.uoc.edu/tourism#HotelDelMarZaragoza
+<http://aula.uoc.edu/tourism#HotelDelMarZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelDelMarZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelDelMarZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#HotelDelMarZaragoza> <http://aula.uoc.edu/tourism#hasRating> "5.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelDelMarZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelDelMarZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Del Mar Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#HotelPalaceBarcelona
+<http://aula.uoc.edu/tourism#HotelPalaceBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelPalaceBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelPalaceBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#HotelPalaceBarcelona> <http://aula.uoc.edu/tourism#hasRating> "3.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelPalaceBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelPalaceBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Palace Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#HotelPalaceBilbao
+<http://aula.uoc.edu/tourism#HotelPalaceBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelPalaceBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelPalaceBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#HotelPalaceBilbao> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelPalaceBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelPalaceBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Palace Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#HotelPalaceCádiz
+<http://aula.uoc.edu/tourism#HotelPalaceCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelPalaceCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelPalaceCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#HotelPalaceCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelPalaceCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelPalaceCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Palace Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#HotelPalaceMadrid
+<http://aula.uoc.edu/tourism#HotelPalaceMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelPalaceMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelPalaceMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#HotelPalaceMadrid> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelPalaceMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelPalaceMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Palace Madrid" .
+# 
+# http://aula.uoc.edu/tourism#HotelPalaceMálaga
+<http://aula.uoc.edu/tourism#HotelPalaceMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelPalaceMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelPalaceMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#HotelPalaceMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelPalaceMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelPalaceMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Palace Málaga" .
+# 
+# http://aula.uoc.edu/tourism#HotelPalacePamplona
+<http://aula.uoc.edu/tourism#HotelPalacePamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelPalacePamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelPalacePamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#HotelPalacePamplona> <http://aula.uoc.edu/tourism#hasRating> "4.1"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelPalacePamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelPalacePamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Palace Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#HotelPalaceToledo
+<http://aula.uoc.edu/tourism#HotelPalaceToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelPalaceToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelPalaceToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#HotelPalaceToledo> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelPalaceToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelPalaceToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Palace Toledo" .
+# 
+# http://aula.uoc.edu/tourism#HotelPalaceZaragoza
+<http://aula.uoc.edu/tourism#HotelPalaceZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelPalaceZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelPalaceZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#HotelPalaceZaragoza> <http://aula.uoc.edu/tourism#hasRating> "3.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelPalaceZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelPalaceZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Palace Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#HotelRoyalBarcelona
+<http://aula.uoc.edu/tourism#HotelRoyalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelRoyalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelRoyalBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#HotelRoyalBarcelona> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelRoyalBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelRoyalBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#HotelRoyalBilbao
+<http://aula.uoc.edu/tourism#HotelRoyalBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelRoyalBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelRoyalBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#HotelRoyalBilbao> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelRoyalBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelRoyalBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#HotelRoyalCádiz
+<http://aula.uoc.edu/tourism#HotelRoyalCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelRoyalCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelRoyalCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#HotelRoyalCádiz> <http://aula.uoc.edu/tourism#hasRating> "3.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelRoyalCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelRoyalCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#HotelRoyalMadrid
+<http://aula.uoc.edu/tourism#HotelRoyalMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelRoyalMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelRoyalMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#HotelRoyalMadrid> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelRoyalMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelRoyalMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Madrid" .
+# 
+# http://aula.uoc.edu/tourism#HotelRoyalMálaga
+<http://aula.uoc.edu/tourism#HotelRoyalMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelRoyalMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelRoyalMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#HotelRoyalMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelRoyalMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelRoyalMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Málaga" .
+# 
+# http://aula.uoc.edu/tourism#HotelRoyalPamplona
+<http://aula.uoc.edu/tourism#HotelRoyalPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelRoyalPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelRoyalPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#HotelRoyalPamplona> <http://aula.uoc.edu/tourism#hasRating> "3.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelRoyalPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelRoyalPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#HotelRoyalSanSebastián
+<http://aula.uoc.edu/tourism#HotelRoyalSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelRoyalSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelRoyalSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#HotelRoyalSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelRoyalSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelRoyalSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#HotelRoyalSevilla
+<http://aula.uoc.edu/tourism#HotelRoyalSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelRoyalSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelRoyalSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#HotelRoyalSevilla> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelRoyalSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelRoyalSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#HotelRoyalValencia
+<http://aula.uoc.edu/tourism#HotelRoyalValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelRoyalValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelRoyalValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#HotelRoyalValencia> <http://aula.uoc.edu/tourism#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelRoyalValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelRoyalValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Valencia" .
+# 
+# http://aula.uoc.edu/tourism#HotelRoyalZaragoza
+<http://aula.uoc.edu/tourism#HotelRoyalZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelRoyalZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelRoyalZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#HotelRoyalZaragoza> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelRoyalZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelRoyalZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#HotelSolBarcelona
+<http://aula.uoc.edu/tourism#HotelSolBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelSolBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelSolBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#HotelSolBarcelona> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelSolBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelSolBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Sol Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#HotelSolBilbao
+<http://aula.uoc.edu/tourism#HotelSolBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelSolBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelSolBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#HotelSolBilbao> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelSolBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelSolBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Sol Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#HotelSolCádiz
+<http://aula.uoc.edu/tourism#HotelSolCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelSolCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelSolCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#HotelSolCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelSolCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelSolCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Sol Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#HotelSolMadrid
+<http://aula.uoc.edu/tourism#HotelSolMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelSolMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelSolMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#HotelSolMadrid> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelSolMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelSolMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Sol Madrid" .
+# 
+# http://aula.uoc.edu/tourism#HotelSolMálaga
+<http://aula.uoc.edu/tourism#HotelSolMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelSolMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelSolMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#HotelSolMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelSolMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelSolMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Sol Málaga" .
+# 
+# http://aula.uoc.edu/tourism#HotelSolSanSebastián
+<http://aula.uoc.edu/tourism#HotelSolSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelSolSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelSolSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#HotelSolSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelSolSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelSolSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Sol San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#HotelSolSevilla
+<http://aula.uoc.edu/tourism#HotelSolSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelSolSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelSolSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#HotelSolSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelSolSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelSolSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Sol Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#HotelSolValencia
+<http://aula.uoc.edu/tourism#HotelSolValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelSolValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelSolValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#HotelSolValencia> <http://aula.uoc.edu/tourism#hasRating> "4.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelSolValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelSolValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Sol Valencia" .
+# 
+# http://aula.uoc.edu/tourism#HotelSolZaragoza
+<http://aula.uoc.edu/tourism#HotelSolZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelSolZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelSolZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#HotelSolZaragoza> <http://aula.uoc.edu/tourism#hasRating> "3.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelSolZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelSolZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Sol Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaBarcelona
+<http://aula.uoc.edu/tourism#HotelVistaBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#HotelVistaBarcelona> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaBilbao
+<http://aula.uoc.edu/tourism#HotelVistaBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#HotelVistaBilbao> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaCádiz
+<http://aula.uoc.edu/tourism#HotelVistaCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#HotelVistaCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaMadrid
+<http://aula.uoc.edu/tourism#HotelVistaMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#HotelVistaMadrid> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista Madrid" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaMálaga
+<http://aula.uoc.edu/tourism#HotelVistaMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#HotelVistaMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista Málaga" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaPamplona
+<http://aula.uoc.edu/tourism#HotelVistaPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#HotelVistaPamplona> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaSanSebastián
+<http://aula.uoc.edu/tourism#HotelVistaSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#HotelVistaSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "4.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaSevilla
+<http://aula.uoc.edu/tourism#HotelVistaSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#HotelVistaSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaToledo
+<http://aula.uoc.edu/tourism#HotelVistaToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#HotelVistaToledo> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista Toledo" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaValencia
+<http://aula.uoc.edu/tourism#HotelVistaValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#HotelVistaValencia> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista Valencia" .
+# 
+# http://aula.uoc.edu/tourism#HotelVistaZaragoza
+<http://aula.uoc.edu/tourism#HotelVistaZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#HotelVistaZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Hotel> .
+<http://aula.uoc.edu/tourism#HotelVistaZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#HotelVistaZaragoza> <http://aula.uoc.edu/tourism#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#HotelVistaZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel " .
+<http://aula.uoc.edu/tourism#HotelVistaZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Vista Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#Madrid
+<http://aula.uoc.edu/tourism#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#Madrid> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#Madrid> <http://www.w3.org/2000/01/rdf-schema#label> "Madrid" .
+# 
+# http://aula.uoc.edu/tourism#MetroBarcelona
+<http://aula.uoc.edu/tourism#MetroBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MetroBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MetroBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#MetroBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MetroBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#MetroBilbao
+<http://aula.uoc.edu/tourism#MetroBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MetroBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MetroBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#MetroBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MetroBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#MetroCádiz
+<http://aula.uoc.edu/tourism#MetroCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MetroCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MetroCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#MetroCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MetroCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#MetroMadrid
+<http://aula.uoc.edu/tourism#MetroMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MetroMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MetroMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#MetroMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MetroMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Madrid" .
+# 
+# http://aula.uoc.edu/tourism#MetroMálaga
+<http://aula.uoc.edu/tourism#MetroMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MetroMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MetroMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#MetroMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MetroMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Málaga" .
+# 
+# http://aula.uoc.edu/tourism#MetroPamplona
+<http://aula.uoc.edu/tourism#MetroPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MetroPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MetroPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#MetroPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MetroPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#MetroSanSebastián
+<http://aula.uoc.edu/tourism#MetroSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MetroSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MetroSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#MetroSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MetroSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Metro San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#MetroSevilla
+<http://aula.uoc.edu/tourism#MetroSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MetroSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MetroSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#MetroSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MetroSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#MetroToledo
+<http://aula.uoc.edu/tourism#MetroToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MetroToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MetroToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#MetroToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MetroToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Toledo" .
+# 
+# http://aula.uoc.edu/tourism#MetroZaragoza
+<http://aula.uoc.edu/tourism#MetroZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MetroZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MetroZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#MetroZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MetroZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#MoviBarcelona
+<http://aula.uoc.edu/tourism#MoviBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MoviBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MoviBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#MoviBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MoviBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Movi Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#MoviBilbao
+<http://aula.uoc.edu/tourism#MoviBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MoviBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MoviBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#MoviBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MoviBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Movi Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#MoviCádiz
+<http://aula.uoc.edu/tourism#MoviCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MoviCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MoviCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#MoviCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MoviCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Movi Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#MoviMadrid
+<http://aula.uoc.edu/tourism#MoviMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MoviMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MoviMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#MoviMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MoviMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Movi Madrid" .
+# 
+# http://aula.uoc.edu/tourism#MoviMálaga
+<http://aula.uoc.edu/tourism#MoviMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MoviMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MoviMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#MoviMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MoviMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Movi Málaga" .
+# 
+# http://aula.uoc.edu/tourism#MoviPamplona
+<http://aula.uoc.edu/tourism#MoviPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MoviPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MoviPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#MoviPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MoviPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Movi Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#MoviSanSebastián
+<http://aula.uoc.edu/tourism#MoviSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MoviSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MoviSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#MoviSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MoviSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Movi San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#MoviSevilla
+<http://aula.uoc.edu/tourism#MoviSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MoviSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MoviSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#MoviSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MoviSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Movi Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#MoviToledo
+<http://aula.uoc.edu/tourism#MoviToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MoviToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MoviToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#MoviToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MoviToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Movi Toledo" .
+# 
+# http://aula.uoc.edu/tourism#MoviValencia
+<http://aula.uoc.edu/tourism#MoviValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MoviValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#MoviValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#MoviValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#MoviValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Movi Valencia" .
+# 
+# http://aula.uoc.edu/tourism#MuseoBarcelona
+<http://aula.uoc.edu/tourism#MuseoBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MuseoBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#MuseoBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#MuseoBarcelona> <http://aula.uoc.edu/tourism#hasRating> "3.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#MuseoBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#MuseoBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#MuseoBilbao
+<http://aula.uoc.edu/tourism#MuseoBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MuseoBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#MuseoBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#MuseoBilbao> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#MuseoBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#MuseoBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#MuseoCádiz
+<http://aula.uoc.edu/tourism#MuseoCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MuseoCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#MuseoCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#MuseoCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#MuseoCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#MuseoCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#MuseoMadrid
+<http://aula.uoc.edu/tourism#MuseoMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MuseoMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#MuseoMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#MuseoMadrid> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#MuseoMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#MuseoMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Madrid" .
+# 
+# http://aula.uoc.edu/tourism#MuseoMálaga
+<http://aula.uoc.edu/tourism#MuseoMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MuseoMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#MuseoMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#MuseoMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#MuseoMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#MuseoMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Málaga" .
+# 
+# http://aula.uoc.edu/tourism#MuseoPamplona
+<http://aula.uoc.edu/tourism#MuseoPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MuseoPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#MuseoPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#MuseoPamplona> <http://aula.uoc.edu/tourism#hasRating> "5.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#MuseoPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#MuseoPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#MuseoSanSebastián
+<http://aula.uoc.edu/tourism#MuseoSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MuseoSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#MuseoSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#MuseoSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#MuseoSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#MuseoSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Museo San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#MuseoSevilla
+<http://aula.uoc.edu/tourism#MuseoSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MuseoSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#MuseoSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#MuseoSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#MuseoSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#MuseoSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#MuseoToledo
+<http://aula.uoc.edu/tourism#MuseoToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MuseoToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#MuseoToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#MuseoToledo> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#MuseoToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#MuseoToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Toledo" .
+# 
+# http://aula.uoc.edu/tourism#MuseoZaragoza
+<http://aula.uoc.edu/tourism#MuseoZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#MuseoZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#MuseoZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#MuseoZaragoza> <http://aula.uoc.edu/tourism#hasRating> "4.1"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#MuseoZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#MuseoZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#Málaga
+<http://aula.uoc.edu/tourism#Málaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#Málaga> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#Málaga> <http://www.w3.org/2000/01/rdf-schema#label> "Málaga" .
+# 
+# http://aula.uoc.edu/tourism#PalacioBarcelona
+<http://aula.uoc.edu/tourism#PalacioBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#PalacioBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#PalacioBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#PalacioBarcelona> <http://aula.uoc.edu/tourism#hasRating> "4.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#PalacioBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#PalacioBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Palacio Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#PalacioBilbao
+<http://aula.uoc.edu/tourism#PalacioBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#PalacioBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#PalacioBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#PalacioBilbao> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#PalacioBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#PalacioBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Palacio Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#PalacioCádiz
+<http://aula.uoc.edu/tourism#PalacioCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#PalacioCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#PalacioCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#PalacioCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#PalacioCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#PalacioCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Palacio Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#PalacioMadrid
+<http://aula.uoc.edu/tourism#PalacioMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#PalacioMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#PalacioMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#PalacioMadrid> <http://aula.uoc.edu/tourism#hasRating> "3.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#PalacioMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#PalacioMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Palacio Madrid" .
+# 
+# http://aula.uoc.edu/tourism#PalacioMálaga
+<http://aula.uoc.edu/tourism#PalacioMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#PalacioMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#PalacioMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#PalacioMálaga> <http://aula.uoc.edu/tourism#hasRating> "3.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#PalacioMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#PalacioMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Palacio Málaga" .
+# 
+# http://aula.uoc.edu/tourism#PalacioPamplona
+<http://aula.uoc.edu/tourism#PalacioPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#PalacioPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#PalacioPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#PalacioPamplona> <http://aula.uoc.edu/tourism#hasRating> "4.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#PalacioPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#PalacioPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Palacio Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#PalacioToledo
+<http://aula.uoc.edu/tourism#PalacioToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#PalacioToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#PalacioToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#PalacioToledo> <http://aula.uoc.edu/tourism#hasRating> "3.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#PalacioToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#PalacioToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Palacio Toledo" .
+# 
+# http://aula.uoc.edu/tourism#PalacioValencia
+<http://aula.uoc.edu/tourism#PalacioValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#PalacioValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#PalacioValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#PalacioValencia> <http://aula.uoc.edu/tourism#hasRating> "3.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#PalacioValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#PalacioValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Palacio Valencia" .
+# 
+# http://aula.uoc.edu/tourism#PalacioZaragoza
+<http://aula.uoc.edu/tourism#PalacioZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#PalacioZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#PalacioZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#PalacioZaragoza> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#PalacioZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#PalacioZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Palacio Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#Pamplona
+<http://aula.uoc.edu/tourism#Pamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#Pamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#Pamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#ParqueBarcelona
+<http://aula.uoc.edu/tourism#ParqueBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParqueBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParqueBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#ParqueBarcelona> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParqueBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParqueBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#ParqueBilbao
+<http://aula.uoc.edu/tourism#ParqueBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParqueBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParqueBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#ParqueBilbao> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParqueBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParqueBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#ParqueCádiz
+<http://aula.uoc.edu/tourism#ParqueCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParqueCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParqueCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#ParqueCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.1"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParqueCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParqueCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#ParqueMadrid
+<http://aula.uoc.edu/tourism#ParqueMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParqueMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParqueMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#ParqueMadrid> <http://aula.uoc.edu/tourism#hasRating> "4.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParqueMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParqueMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Madrid" .
+# 
+# http://aula.uoc.edu/tourism#ParqueMálaga
+<http://aula.uoc.edu/tourism#ParqueMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParqueMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParqueMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#ParqueMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParqueMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParqueMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Málaga" .
+# 
+# http://aula.uoc.edu/tourism#ParquePamplona
+<http://aula.uoc.edu/tourism#ParquePamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParquePamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParquePamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#ParquePamplona> <http://aula.uoc.edu/tourism#hasRating> "4.1"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParquePamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParquePamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#ParqueSanSebastián
+<http://aula.uoc.edu/tourism#ParqueSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParqueSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParqueSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#ParqueSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "3.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParqueSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParqueSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Parque San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#ParqueSevilla
+<http://aula.uoc.edu/tourism#ParqueSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParqueSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParqueSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#ParqueSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParqueSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParqueSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#ParqueToledo
+<http://aula.uoc.edu/tourism#ParqueToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParqueToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParqueToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#ParqueToledo> <http://aula.uoc.edu/tourism#hasRating> "4.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParqueToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParqueToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Toledo" .
+# 
+# http://aula.uoc.edu/tourism#ParqueValencia
+<http://aula.uoc.edu/tourism#ParqueValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParqueValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParqueValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#ParqueValencia> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParqueValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParqueValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Valencia" .
+# 
+# http://aula.uoc.edu/tourism#ParqueZaragoza
+<http://aula.uoc.edu/tourism#ParqueZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#ParqueZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Attraction> .
+<http://aula.uoc.edu/tourism#ParqueZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#ParqueZaragoza> <http://aula.uoc.edu/tourism#hasRating> "4.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#ParqueZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction " .
+<http://aula.uoc.edu/tourism#ParqueZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona> <http://aula.uoc.edu/tourism#hasRating> "4.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz
+<http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid> <http://aula.uoc.edu/tourism#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia Madrid" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia Málaga" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona
+<http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "3.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteDeliciaValencia
+<http://aula.uoc.edu/tourism#RestauranteDeliciaValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaValencia> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia Valencia" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza
+<http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza> <http://aula.uoc.edu/tourism#hasRating> "3.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona
+<http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona> <http://aula.uoc.edu/tourism#hasRating> "3.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Fusión Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteFusiónBilbao
+<http://aula.uoc.edu/tourism#RestauranteFusiónBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónBilbao> <http://aula.uoc.edu/tourism#hasRating> "5.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteFusiónBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Fusión Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteFusiónCádiz
+<http://aula.uoc.edu/tourism#RestauranteFusiónCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteFusiónCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Fusión Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteFusiónMadrid
+<http://aula.uoc.edu/tourism#RestauranteFusiónMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónMadrid> <http://aula.uoc.edu/tourism#hasRating> "4.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteFusiónMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Fusión Madrid" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteFusiónMálaga
+<http://aula.uoc.edu/tourism#RestauranteFusiónMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteFusiónMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Fusión Málaga" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteFusiónPamplona
+<http://aula.uoc.edu/tourism#RestauranteFusiónPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónPamplona> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteFusiónPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Fusión Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteFusiónSevilla
+<http://aula.uoc.edu/tourism#RestauranteFusiónSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteFusiónSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Fusión Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteFusiónToledo
+<http://aula.uoc.edu/tourism#RestauranteFusiónToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónToledo> <http://aula.uoc.edu/tourism#hasRating> "4.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteFusiónToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Fusión Toledo" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteFusiónValencia
+<http://aula.uoc.edu/tourism#RestauranteFusiónValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónValencia> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteFusiónValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Fusión Valencia" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza
+<http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza> <http://aula.uoc.edu/tourism#hasRating> "3.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Fusión Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona
+<http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteGourmetCádiz
+<http://aula.uoc.edu/tourism#RestauranteGourmetCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteGourmetCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteGourmetMadrid
+<http://aula.uoc.edu/tourism#RestauranteGourmetMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetMadrid> <http://aula.uoc.edu/tourism#hasRating> "3.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteGourmetMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Madrid" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteGourmetMálaga
+<http://aula.uoc.edu/tourism#RestauranteGourmetMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteGourmetMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Málaga" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteGourmetPamplona
+<http://aula.uoc.edu/tourism#RestauranteGourmetPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetPamplona> <http://aula.uoc.edu/tourism#hasRating> "5.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteGourmetPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián
+<http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteGourmetSevilla
+<http://aula.uoc.edu/tourism#RestauranteGourmetSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetSevilla> <http://aula.uoc.edu/tourism#hasRating> "3.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteGourmetSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteGourmetToledo
+<http://aula.uoc.edu/tourism#RestauranteGourmetToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetToledo> <http://aula.uoc.edu/tourism#hasRating> "4.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteGourmetToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Toledo" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteGourmetValencia
+<http://aula.uoc.edu/tourism#RestauranteGourmetValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetValencia> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteGourmetValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Valencia" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza
+<http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteSaborCádiz
+<http://aula.uoc.edu/tourism#RestauranteSaborCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteSaborCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteSaborCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#RestauranteSaborCádiz> <http://aula.uoc.edu/tourism#hasRating> "3.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteSaborCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteSaborCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Sabor Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteSaborMálaga
+<http://aula.uoc.edu/tourism#RestauranteSaborMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteSaborMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteSaborMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#RestauranteSaborMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteSaborMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteSaborMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Sabor Málaga" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián
+<http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Sabor San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteSaborSevilla
+<http://aula.uoc.edu/tourism#RestauranteSaborSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteSaborSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteSaborSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#RestauranteSaborSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteSaborSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteSaborSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Sabor Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteSaborValencia
+<http://aula.uoc.edu/tourism#RestauranteSaborValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteSaborValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteSaborValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#RestauranteSaborValencia> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteSaborValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteSaborValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Sabor Valencia" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteSaborZaragoza
+<http://aula.uoc.edu/tourism#RestauranteSaborZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteSaborZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteSaborZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#RestauranteSaborZaragoza> <http://aula.uoc.edu/tourism#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteSaborZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteSaborZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Sabor Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz
+<http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz> <http://aula.uoc.edu/tourism#hasRating> "4.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Tradición Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid> <http://aula.uoc.edu/tourism#hasRating> "4.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Tradición Madrid" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga> <http://aula.uoc.edu/tourism#hasRating> "4.1"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Tradición Málaga" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián> <http://aula.uoc.edu/tourism#hasRating> "5.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Tradición San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla> <http://aula.uoc.edu/tourism#hasRating> "4.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Tradición Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteTradiciónToledo
+<http://aula.uoc.edu/tourism#RestauranteTradiciónToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónToledo> <http://aula.uoc.edu/tourism#hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Tradición Toledo" .
+# 
+# http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza
+<http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Restaurant> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza> <http://aula.uoc.edu/tourism#hasRating> "4.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant " .
+<http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Tradición Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#SanSebastián
+<http://aula.uoc.edu/tourism#SanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#SanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#SanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#Sevilla
+<http://aula.uoc.edu/tourism#Sevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#Sevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#Sevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#Toledo
+<http://aula.uoc.edu/tourism#Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#Toledo> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#Toledo> <http://www.w3.org/2000/01/rdf-schema#label> "Toledo" .
+# 
+# http://aula.uoc.edu/tourism#TransBilbao
+<http://aula.uoc.edu/tourism#TransBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#TransBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#TransBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#TransBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#TransBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Trans Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#TransCádiz
+<http://aula.uoc.edu/tourism#TransCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#TransCádiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#TransCádiz> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Cádiz> .
+<http://aula.uoc.edu/tourism#TransCádiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#TransCádiz> <http://www.w3.org/2000/01/rdf-schema#label> "Trans Cádiz" .
+# 
+# http://aula.uoc.edu/tourism#TransMadrid
+<http://aula.uoc.edu/tourism#TransMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#TransMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#TransMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#TransMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#TransMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Trans Madrid" .
+# 
+# http://aula.uoc.edu/tourism#TransMálaga
+<http://aula.uoc.edu/tourism#TransMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#TransMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#TransMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#TransMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#TransMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Trans Málaga" .
+# 
+# http://aula.uoc.edu/tourism#TransPamplona
+<http://aula.uoc.edu/tourism#TransPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#TransPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#TransPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#TransPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#TransPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Trans Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#TransSanSebastián
+<http://aula.uoc.edu/tourism#TransSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#TransSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#TransSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#TransSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#TransSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Trans San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#TransSevilla
+<http://aula.uoc.edu/tourism#TransSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#TransSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#TransSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#TransSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#TransSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Trans Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#TransToledo
+<http://aula.uoc.edu/tourism#TransToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#TransToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#TransToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#TransToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#TransToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Trans Toledo" .
+# 
+# http://aula.uoc.edu/tourism#TransValencia
+<http://aula.uoc.edu/tourism#TransValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#TransValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#TransValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#TransValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#TransValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Trans Valencia" .
+# 
+# http://aula.uoc.edu/tourism#TransZaragoza
+<http://aula.uoc.edu/tourism#TransZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#TransZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#TransZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#TransZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#TransZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Trans Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#UrbanBarcelona
+<http://aula.uoc.edu/tourism#UrbanBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#UrbanBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#UrbanBarcelona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Barcelona> .
+<http://aula.uoc.edu/tourism#UrbanBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#UrbanBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Barcelona" .
+# 
+# http://aula.uoc.edu/tourism#UrbanBilbao
+<http://aula.uoc.edu/tourism#UrbanBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#UrbanBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#UrbanBilbao> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Bilbao> .
+<http://aula.uoc.edu/tourism#UrbanBilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#UrbanBilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Bilbao" .
+# 
+# http://aula.uoc.edu/tourism#UrbanMadrid
+<http://aula.uoc.edu/tourism#UrbanMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#UrbanMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#UrbanMadrid> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Madrid> .
+<http://aula.uoc.edu/tourism#UrbanMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#UrbanMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Madrid" .
+# 
+# http://aula.uoc.edu/tourism#UrbanMálaga
+<http://aula.uoc.edu/tourism#UrbanMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#UrbanMálaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#UrbanMálaga> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Málaga> .
+<http://aula.uoc.edu/tourism#UrbanMálaga> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#UrbanMálaga> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Málaga" .
+# 
+# http://aula.uoc.edu/tourism#UrbanPamplona
+<http://aula.uoc.edu/tourism#UrbanPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#UrbanPamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#UrbanPamplona> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Pamplona> .
+<http://aula.uoc.edu/tourism#UrbanPamplona> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#UrbanPamplona> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Pamplona" .
+# 
+# http://aula.uoc.edu/tourism#UrbanSanSebastián
+<http://aula.uoc.edu/tourism#UrbanSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#UrbanSanSebastián> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#UrbanSanSebastián> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#SanSebastián> .
+<http://aula.uoc.edu/tourism#UrbanSanSebastián> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#UrbanSanSebastián> <http://www.w3.org/2000/01/rdf-schema#label> "Urban San Sebastián" .
+# 
+# http://aula.uoc.edu/tourism#UrbanSevilla
+<http://aula.uoc.edu/tourism#UrbanSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#UrbanSevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#UrbanSevilla> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Sevilla> .
+<http://aula.uoc.edu/tourism#UrbanSevilla> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#UrbanSevilla> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Sevilla" .
+# 
+# http://aula.uoc.edu/tourism#UrbanToledo
+<http://aula.uoc.edu/tourism#UrbanToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#UrbanToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#UrbanToledo> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Toledo> .
+<http://aula.uoc.edu/tourism#UrbanToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#UrbanToledo> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Toledo" .
+# 
+# http://aula.uoc.edu/tourism#UrbanValencia
+<http://aula.uoc.edu/tourism#UrbanValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#UrbanValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#UrbanValencia> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Valencia> .
+<http://aula.uoc.edu/tourism#UrbanValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#UrbanValencia> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Valencia" .
+# 
+# http://aula.uoc.edu/tourism#UrbanZaragoza
+<http://aula.uoc.edu/tourism#UrbanZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aula.uoc.edu/tourism#UrbanZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#Transport> .
+<http://aula.uoc.edu/tourism#UrbanZaragoza> <http://aula.uoc.edu/tourism#locatedIn> <http://aula.uoc.edu/tourism#Zaragoza> .
+<http://aula.uoc.edu/tourism#UrbanZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport " .
+<http://aula.uoc.edu/tourism#UrbanZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Zaragoza" .
+# 
+# http://aula.uoc.edu/tourism#Valencia
+<http://aula.uoc.edu/tourism#Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#Valencia> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#Valencia> <http://www.w3.org/2000/01/rdf-schema#label> "Valencia" .
+# 
+# http://aula.uoc.edu/tourism#Zaragoza
+<http://aula.uoc.edu/tourism#Zaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://aula.uoc.edu/tourism#City> .
+<http://aula.uoc.edu/tourism#Zaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "City " .
+<http://aula.uoc.edu/tourism#Zaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Zaragoza" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

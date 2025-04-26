@@ -1,0 +1,2678 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://aula.uoc.edu/tourism", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "es" : "Ontología de Turismo Inteligente"
+    },
+    "iri" : "http://rafaelromero.org/ontologia/turismo",
+    "version" : "v1.0",
+    "author" : [ "Rafael Romero Montilla" ],
+    "description" : {
+      "es" : "Ontología que modela ciudades, eventos turísticos, alojamientos, atracciones culturales, restaurantes y recomendaciones urbanas personalizadas."
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2025-04-27",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Rafael Romero Montilla",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "turismo",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Licencia Creative Commons Attribution 4.0 (CC BY 4.0)",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://rafaelromero.org/ontologia/turismo#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "Ontología de Turismo Inteligente",
+        "type" : "label"
+      } ],
+      "homepage" : [ {
+        "identifier" : "homepage",
+        "language" : "undefined",
+        "value" : "https://example.org",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://aula.uoc.edu/tourism#Event",
+    "baseIri" : "http://aula.uoc.edu/tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "individuals" : [ {
+      "iri" : "http://aula.uoc.edu/tourism#CarnavalBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalBarcelona",
+        "undefined" : "Carnaval Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalPamplona",
+        "undefined" : "Festival Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FeriaSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FeriaSevilla",
+        "undefined" : "Feria Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ConciertoSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "ConciertoSanSebastián",
+        "undefined" : "Concierto San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ConciertoZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "ConciertoZaragoza",
+        "undefined" : "Concierto Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalCádiz",
+        "undefined" : "Festival Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CongresoSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CongresoSanSebastián",
+        "undefined" : "Congreso San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CongresoValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CongresoValencia",
+        "undefined" : "Congreso Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CongresoBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CongresoBilbao",
+        "undefined" : "Congreso Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CongresoCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CongresoCádiz",
+        "undefined" : "Congreso Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalSanSebastián",
+        "undefined" : "Festival San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalBilbao",
+        "undefined" : "Festival Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CongresoZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CongresoZaragoza",
+        "undefined" : "Congreso Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalMadrid",
+        "undefined" : "Festival Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CarnavalBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalBilbao",
+        "undefined" : "Carnaval Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CongresoBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CongresoBarcelona",
+        "undefined" : "Congreso Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalSevilla",
+        "undefined" : "Festival Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FeriaBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FeriaBarcelona",
+        "undefined" : "Feria Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CarnavalZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalZaragoza",
+        "undefined" : "Carnaval Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ConciertoCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "ConciertoCádiz",
+        "undefined" : "Concierto Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CongresoToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CongresoToledo",
+        "undefined" : "Congreso Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FeriaMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FeriaMadrid",
+        "undefined" : "Feria Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FeriaPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FeriaPamplona",
+        "undefined" : "Feria Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CarnavalValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalValencia",
+        "undefined" : "Carnaval Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ConciertoPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "ConciertoPamplona",
+        "undefined" : "Concierto Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalBarcelona",
+        "undefined" : "Festival Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CarnavalSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalSanSebastián",
+        "undefined" : "Carnaval San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CarnavalMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalMálaga",
+        "undefined" : "Carnaval Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ConciertoToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "ConciertoToledo",
+        "undefined" : "Concierto Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalMálaga",
+        "undefined" : "Festival Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FeriaMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FeriaMálaga",
+        "undefined" : "Feria Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalToledo",
+        "undefined" : "Festival Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CarnavalSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalSevilla",
+        "undefined" : "Carnaval Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ConciertoMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "ConciertoMálaga",
+        "undefined" : "Concierto Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FeriaToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FeriaToledo",
+        "undefined" : "Feria Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalZaragoza",
+        "undefined" : "Festival Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CarnavalToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalToledo",
+        "undefined" : "Carnaval Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FeriaZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FeriaZaragoza",
+        "undefined" : "Feria Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CarnavalMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalMadrid",
+        "undefined" : "Carnaval Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FestivalValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FestivalValencia",
+        "undefined" : "Festival Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CongresoSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CongresoSevilla",
+        "undefined" : "Congreso Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ConciertoValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "ConciertoValencia",
+        "undefined" : "Concierto Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CarnavalCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalCádiz",
+        "undefined" : "Carnaval Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ConciertoSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "ConciertoSevilla",
+        "undefined" : "Concierto Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#FeriaCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Event "
+      },
+      "labels" : {
+        "IRI-based" : "FeriaCádiz",
+        "undefined" : "Feria Cádiz"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://aula.uoc.edu/tourism#Transport",
+    "baseIri" : "http://aula.uoc.edu/tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport"
+    },
+    "individuals" : [ {
+      "iri" : "http://aula.uoc.edu/tourism#UrbanSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "UrbanSevilla",
+        "undefined" : "Urban Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#UrbanToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "UrbanToledo",
+        "undefined" : "Urban Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#TransSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "TransSevilla",
+        "undefined" : "Trans Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#UrbanMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "UrbanMálaga",
+        "undefined" : "Urban Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MoviCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MoviCádiz",
+        "undefined" : "Movi Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MoviSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MoviSevilla",
+        "undefined" : "Movi Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MetroCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MetroCádiz",
+        "undefined" : "Metro Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MetroBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MetroBilbao",
+        "undefined" : "Metro Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#TransPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "TransPamplona",
+        "undefined" : "Trans Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MetroSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MetroSevilla",
+        "undefined" : "Metro Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MetroBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MetroBarcelona",
+        "undefined" : "Metro Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CityMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "CityMálaga",
+        "undefined" : "City Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#TransToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "TransToledo",
+        "undefined" : "Trans Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MetroSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MetroSanSebastián",
+        "undefined" : "Metro San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MoviToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MoviToledo",
+        "undefined" : "Movi Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CityZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "CityZaragoza",
+        "undefined" : "City Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MetroZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MetroZaragoza",
+        "undefined" : "Metro Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CityToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "CityToledo",
+        "undefined" : "City Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#UrbanPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "UrbanPamplona",
+        "undefined" : "Urban Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#UrbanBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "UrbanBarcelona",
+        "undefined" : "Urban Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MoviSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MoviSanSebastián",
+        "undefined" : "Movi San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#TransMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "TransMálaga",
+        "undefined" : "Trans Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#UrbanValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "UrbanValencia",
+        "undefined" : "Urban Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CityBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "CityBarcelona",
+        "undefined" : "City Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CityBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "CityBilbao",
+        "undefined" : "City Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#UrbanMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "UrbanMadrid",
+        "undefined" : "Urban Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#TransSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "TransSanSebastián",
+        "undefined" : "Trans San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CityMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "CityMadrid",
+        "undefined" : "City Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#TransValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "TransValencia",
+        "undefined" : "Trans Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#TransMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "TransMadrid",
+        "undefined" : "Trans Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#TransBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "TransBilbao",
+        "undefined" : "Trans Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CitySevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "CitySevilla",
+        "undefined" : "City Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MetroToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MetroToledo",
+        "undefined" : "Metro Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MoviMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MoviMadrid",
+        "undefined" : "Movi Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#TransCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "TransCádiz",
+        "undefined" : "Trans Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#UrbanBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "UrbanBilbao",
+        "undefined" : "Urban Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MoviValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MoviValencia",
+        "undefined" : "Movi Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MoviMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MoviMálaga",
+        "undefined" : "Movi Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#UrbanSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "UrbanSanSebastián",
+        "undefined" : "Urban San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MetroPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MetroPamplona",
+        "undefined" : "Metro Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MetroMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MetroMadrid",
+        "undefined" : "Metro Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MoviBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MoviBilbao",
+        "undefined" : "Movi Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MoviBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MoviBarcelona",
+        "undefined" : "Movi Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MoviPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MoviPamplona",
+        "undefined" : "Movi Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CityCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "CityCádiz",
+        "undefined" : "City Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MetroMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "MetroMálaga",
+        "undefined" : "Metro Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CityPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "CityPamplona",
+        "undefined" : "City Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#TransZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "TransZaragoza",
+        "undefined" : "Trans Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#UrbanZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Transport "
+      },
+      "labels" : {
+        "IRI-based" : "UrbanZaragoza",
+        "undefined" : "Urban Zaragoza"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://aula.uoc.edu/tourism#City",
+    "baseIri" : "http://aula.uoc.edu/tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://aula.uoc.edu/tourism#SanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "SanSebastián",
+        "undefined" : "San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#Málaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "Málaga",
+        "undefined" : "Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#Toledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "Toledo",
+        "undefined" : "Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#Zaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "Zaragoza",
+        "undefined" : "Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#Sevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "Sevilla",
+        "undefined" : "Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#Barcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "Barcelona",
+        "undefined" : "Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#Valencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "Valencia",
+        "undefined" : "Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#Madrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "Madrid",
+        "undefined" : "Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#Bilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "Bilbao",
+        "undefined" : "Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#Cádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "Cádiz",
+        "undefined" : "Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#Pamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "City "
+      },
+      "labels" : {
+        "IRI-based" : "Pamplona",
+        "undefined" : "Pamplona"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://aula.uoc.edu/tourism#Hotel",
+    "baseIri" : "http://aula.uoc.edu/tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://aula.uoc.edu/tourism#HotelDelMarSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelDelMarSanSebastián",
+        "undefined" : "Hotel Del Mar San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelPalaceCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelPalaceCádiz",
+        "undefined" : "Hotel Palace Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelRoyalSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalSanSebastián",
+        "undefined" : "Hotel Royal San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaMálaga",
+        "undefined" : "Hotel Vista Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelRoyalBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalBilbao",
+        "undefined" : "Hotel Royal Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelRoyalPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalPamplona",
+        "undefined" : "Hotel Royal Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelSolValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelSolValencia",
+        "undefined" : "Hotel Sol Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaBarcelona",
+        "undefined" : "Hotel Vista Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaToledo",
+        "undefined" : "Hotel Vista Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelRoyalMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalMálaga",
+        "undefined" : "Hotel Royal Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaPamplona",
+        "undefined" : "Hotel Vista Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelDelMarZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelDelMarZaragoza",
+        "undefined" : "Hotel Del Mar Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelSolSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelSolSevilla",
+        "undefined" : "Hotel Sol Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelDelMarBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelDelMarBarcelona",
+        "undefined" : "Hotel Del Mar Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelDelMarSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelDelMarSevilla",
+        "undefined" : "Hotel Del Mar Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelRoyalCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalCádiz",
+        "undefined" : "Hotel Royal Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelPalaceZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelPalaceZaragoza",
+        "undefined" : "Hotel Palace Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelDelMarValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelDelMarValencia",
+        "undefined" : "Hotel Del Mar Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelPalaceMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelPalaceMálaga",
+        "undefined" : "Hotel Palace Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelSolMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelSolMálaga",
+        "undefined" : "Hotel Sol Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelPalaceBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelPalaceBarcelona",
+        "undefined" : "Hotel Palace Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelPalaceMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelPalaceMadrid",
+        "undefined" : "Hotel Palace Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelDelMarCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelDelMarCádiz",
+        "undefined" : "Hotel Del Mar Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelPalaceToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelPalaceToledo",
+        "undefined" : "Hotel Palace Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelPalaceBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelPalaceBilbao",
+        "undefined" : "Hotel Palace Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelSolSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelSolSanSebastián",
+        "undefined" : "Hotel Sol San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelSolBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelSolBilbao",
+        "undefined" : "Hotel Sol Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelSolZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelSolZaragoza",
+        "undefined" : "Hotel Sol Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaSanSebastián",
+        "undefined" : "Hotel Vista San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelRoyalValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalValencia",
+        "undefined" : "Hotel Royal Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelSolMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelSolMadrid",
+        "undefined" : "Hotel Sol Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelRoyalBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalBarcelona",
+        "undefined" : "Hotel Royal Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelRoyalZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalZaragoza",
+        "undefined" : "Hotel Royal Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaCádiz",
+        "undefined" : "Hotel Vista Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaBilbao",
+        "undefined" : "Hotel Vista Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaMadrid",
+        "undefined" : "Hotel Vista Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaZaragoza",
+        "undefined" : "Hotel Vista Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelSolBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelSolBarcelona",
+        "undefined" : "Hotel Sol Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelDelMarMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelDelMarMadrid",
+        "undefined" : "Hotel Del Mar Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelSolCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelSolCádiz",
+        "undefined" : "Hotel Sol Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelRoyalSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalSevilla",
+        "undefined" : "Hotel Royal Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaSevilla",
+        "undefined" : "Hotel Vista Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelDelMarToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelDelMarToledo",
+        "undefined" : "Hotel Del Mar Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelDelMarMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelDelMarMálaga",
+        "undefined" : "Hotel Del Mar Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelDelMarPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelDelMarPamplona",
+        "undefined" : "Hotel Del Mar Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelRoyalMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalMadrid",
+        "undefined" : "Hotel Royal Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelPalacePamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelPalacePamplona",
+        "undefined" : "Hotel Palace Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#HotelVistaValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Hotel "
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaValencia",
+        "undefined" : "Hotel Vista Valencia"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://aula.uoc.edu/tourism#Restaurant",
+    "baseIri" : "http://aula.uoc.edu/tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteFusiónBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteFusiónBarcelona",
+        "undefined" : "Restaurante Fusión Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteDeliciaCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaCádiz",
+        "undefined" : "Restaurante Delicia Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteSaborCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteSaborCádiz",
+        "undefined" : "Restaurante Sabor Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteTradiciónSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteTradiciónSanSebastián",
+        "undefined" : "Restaurante Tradición San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteGourmetZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetZaragoza",
+        "undefined" : "Restaurante Gourmet Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteDeliciaZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaZaragoza",
+        "undefined" : "Restaurante Delicia Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteSaborValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteSaborValencia",
+        "undefined" : "Restaurante Sabor Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteTradiciónMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteTradiciónMadrid",
+        "undefined" : "Restaurante Tradición Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteTradiciónToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteTradiciónToledo",
+        "undefined" : "Restaurante Tradición Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteGourmetMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetMadrid",
+        "undefined" : "Restaurante Gourmet Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteFusiónMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteFusiónMálaga",
+        "undefined" : "Restaurante Fusión Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteDeliciaBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaBilbao",
+        "undefined" : "Restaurante Delicia Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteGourmetBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetBarcelona",
+        "undefined" : "Restaurante Gourmet Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteGourmetToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetToledo",
+        "undefined" : "Restaurante Gourmet Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteGourmetPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetPamplona",
+        "undefined" : "Restaurante Gourmet Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteFusiónToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteFusiónToledo",
+        "undefined" : "Restaurante Fusión Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteTradiciónZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteTradiciónZaragoza",
+        "undefined" : "Restaurante Tradición Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteFusiónCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteFusiónCádiz",
+        "undefined" : "Restaurante Fusión Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteFusiónMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteFusiónMadrid",
+        "undefined" : "Restaurante Fusión Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteFusiónZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteFusiónZaragoza",
+        "undefined" : "Restaurante Fusión Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteFusiónValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteFusiónValencia",
+        "undefined" : "Restaurante Fusión Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteFusiónSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteFusiónSevilla",
+        "undefined" : "Restaurante Fusión Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteSaborSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteSaborSevilla",
+        "undefined" : "Restaurante Sabor Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteSaborZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteSaborZaragoza",
+        "undefined" : "Restaurante Sabor Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteGourmetSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetSanSebastián",
+        "undefined" : "Restaurante Gourmet San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteGourmetMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetMálaga",
+        "undefined" : "Restaurante Gourmet Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteDeliciaPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaPamplona",
+        "undefined" : "Restaurante Delicia Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteTradiciónSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteTradiciónSevilla",
+        "undefined" : "Restaurante Tradición Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteDeliciaBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaBarcelona",
+        "undefined" : "Restaurante Delicia Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteFusiónPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteFusiónPamplona",
+        "undefined" : "Restaurante Fusión Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteDeliciaValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaValencia",
+        "undefined" : "Restaurante Delicia Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteTradiciónMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteTradiciónMálaga",
+        "undefined" : "Restaurante Tradición Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteDeliciaSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaSanSebastián",
+        "undefined" : "Restaurante Delicia San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteDeliciaMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaMadrid",
+        "undefined" : "Restaurante Delicia Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteSaborMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteSaborMálaga",
+        "undefined" : "Restaurante Sabor Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteDeliciaSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaSevilla",
+        "undefined" : "Restaurante Delicia Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteSaborSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteSaborSanSebastián",
+        "undefined" : "Restaurante Sabor San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteGourmetCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetCádiz",
+        "undefined" : "Restaurante Gourmet Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteGourmetValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetValencia",
+        "undefined" : "Restaurante Gourmet Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteFusiónBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteFusiónBilbao",
+        "undefined" : "Restaurante Fusión Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteGourmetSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetSevilla",
+        "undefined" : "Restaurante Gourmet Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteTradiciónCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteTradiciónCádiz",
+        "undefined" : "Restaurante Tradición Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#RestauranteDeliciaMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Restaurant "
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaMálaga",
+        "undefined" : "Restaurante Delicia Málaga"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://aula.uoc.edu/tourism#Attraction",
+    "baseIri" : "http://aula.uoc.edu/tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://aula.uoc.edu/tourism#PalacioCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "PalacioCádiz",
+        "undefined" : "Palacio Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MuseoMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "MuseoMálaga",
+        "undefined" : "Museo Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CatedralToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CatedralToledo",
+        "undefined" : "Catedral Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CatedralCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CatedralCádiz",
+        "undefined" : "Catedral Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParqueZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParqueZaragoza",
+        "undefined" : "Parque Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CatedralValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CatedralValencia",
+        "undefined" : "Catedral Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CatedralSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CatedralSevilla",
+        "undefined" : "Catedral Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloCádiz",
+        "undefined" : "Castillo Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloBarcelona",
+        "undefined" : "Castillo Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CatedralMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CatedralMálaga",
+        "undefined" : "Catedral Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParqueSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParqueSanSebastián",
+        "undefined" : "Parque San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloPamplona",
+        "undefined" : "Castillo Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MuseoBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "MuseoBarcelona",
+        "undefined" : "Museo Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloToledo",
+        "undefined" : "Castillo Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParqueBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParqueBarcelona",
+        "undefined" : "Parque Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#PalacioValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "PalacioValencia",
+        "undefined" : "Palacio Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloMálaga",
+        "undefined" : "Castillo Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParqueBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParqueBilbao",
+        "undefined" : "Parque Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#PalacioBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "PalacioBarcelona",
+        "undefined" : "Palacio Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloSevilla",
+        "undefined" : "Castillo Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#PalacioMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "PalacioMadrid",
+        "undefined" : "Palacio Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MuseoToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "MuseoToledo",
+        "undefined" : "Museo Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloBilbao",
+        "undefined" : "Castillo Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParqueCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParqueCádiz",
+        "undefined" : "Parque Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloValencia",
+        "undefined" : "Castillo Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParquePamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParquePamplona",
+        "undefined" : "Parque Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#PalacioPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "PalacioPamplona",
+        "undefined" : "Palacio Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CatedralBarcelona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CatedralBarcelona",
+        "undefined" : "Catedral Barcelona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloSanSebastián",
+        "undefined" : "Castillo San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloMadrid",
+        "undefined" : "Castillo Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParqueToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParqueToledo",
+        "undefined" : "Parque Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CatedralPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CatedralPamplona",
+        "undefined" : "Catedral Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MuseoSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "MuseoSevilla",
+        "undefined" : "Museo Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CatedralMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CatedralMadrid",
+        "undefined" : "Catedral Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#PalacioZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "PalacioZaragoza",
+        "undefined" : "Palacio Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#PalacioMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "PalacioMálaga",
+        "undefined" : "Palacio Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParqueValencia",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParqueValencia",
+        "undefined" : "Parque Valencia"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParqueMálaga",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParqueMálaga",
+        "undefined" : "Parque Málaga"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MuseoPamplona",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "MuseoPamplona",
+        "undefined" : "Museo Pamplona"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#PalacioBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "PalacioBilbao",
+        "undefined" : "Palacio Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParqueMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParqueMadrid",
+        "undefined" : "Parque Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MuseoBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "MuseoBilbao",
+        "undefined" : "Museo Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MuseoMadrid",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "MuseoMadrid",
+        "undefined" : "Museo Madrid"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#PalacioToledo",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "PalacioToledo",
+        "undefined" : "Palacio Toledo"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MuseoCádiz",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "MuseoCádiz",
+        "undefined" : "Museo Cádiz"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#ParqueSevilla",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "ParqueSevilla",
+        "undefined" : "Parque Sevilla"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MuseoSanSebastián",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "MuseoSanSebastián",
+        "undefined" : "Museo San Sebastián"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#MuseoZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "MuseoZaragoza",
+        "undefined" : "Museo Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CastilloZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CastilloZaragoza",
+        "undefined" : "Castillo Zaragoza"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CatedralBilbao",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CatedralBilbao",
+        "undefined" : "Catedral Bilbao"
+      }
+    }, {
+      "iri" : "http://aula.uoc.edu/tourism#CatedralZaragoza",
+      "baseIri" : "http://aula.uoc.edu/tourism",
+      "comment" : {
+        "undefined" : "Attraction "
+      },
+      "labels" : {
+        "IRI-based" : "CatedralZaragoza",
+        "undefined" : "Catedral Zaragoza"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://aula.uoc.edu/tourism#locatedIn",
+    "baseIri" : "http://aula.uoc.edu/tourism",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "locatedIn"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://aula.uoc.edu/tourism#hasRating",
+    "baseIri" : "http://aula.uoc.edu/tourism",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasRating"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://aula.uoc.edu/tourism#hasPrice",
+    "baseIri" : "http://aula.uoc.edu/tourism",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasPrice"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "7"
+  } ]
+}
